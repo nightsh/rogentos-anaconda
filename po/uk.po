@@ -161,7 +161,7 @@ msgstr ""
 #: textw/partition_text.py:186 textw/partition_text.py:192
 #: textw/partition_text.py:198 textw/partition_text.py:227
 #: textw/partition_text.py:273 textw/upgrade_text.py:181
-#: textw/upgrade_text.py:188 sabayon/livecd.py:476 sabayon/utils.py:1005
+#: textw/upgrade_text.py:188 rogentos/livecd.py:476 rogentos/utils.py:1005
 msgid "Error"
 msgstr "Помилка"
 
@@ -190,7 +190,7 @@ msgstr ""
 #: yuminstall.py:930 yuminstall.py:1010 yuminstall.py:1016 yuminstall.py:1169
 #: yuminstall.py:1186 yuminstall.py:1239 yuminstall.py:1427 yuminstall.py:1446
 #: yuminstall.py:1469 storage/__init__.py:112 storage/__init__.py:219
-#: storage/__init__.py:1966 storage/dasd.py:139 sabayon/livecd.py:483
+#: storage/__init__.py:1966 storage/dasd.py:139 rogentos/livecd.py:483
 msgid "_Exit installer"
 msgstr "_Перервати встановлення"
 
@@ -459,7 +459,7 @@ msgstr "Програма встановлення завершує роботу.
 msgid "Exiting"
 msgstr "Вихід"
 
-#: gui.py:1403 livecd.py:126 text.py:271 upgrade.py:228 sabayon/livecd.py:69
+#: gui.py:1403 livecd.py:126 text.py:271 upgrade.py:228 rogentos/livecd.py:69
 msgid "Exit installer"
 msgstr "Перервати встановлення"
 
@@ -559,7 +559,7 @@ msgstr "_Перезавантажити"
 
 #: image.py:251 livecd.py:406 packages.py:332 upgrade.py:236 yuminstall.py:930
 #: yuminstall.py:1016 yuminstall.py:1427 yuminstall.py:1469 yuminstall.py:1487
-#: ui/anaconda.glade.h:2 sabayon/livecd.py:482
+#: ui/anaconda.glade.h:2 rogentos/livecd.py:482
 msgid "_Back"
 msgstr "_Назад"
 
@@ -805,7 +805,7 @@ msgstr ""
 "спробу:\n"
 "%s"
 
-#: livecd.py:121 sabayon/livecd.py:64
+#: livecd.py:121 rogentos/livecd.py:64
 msgid "Unable to find image"
 msgstr "Не вдається знайти образ"
 
@@ -841,7 +841,7 @@ msgstr ""
 "Виконання завершальних операцій з файловою системою. Це може зайняти "
 "декілька хвилин."
 
-#: livecd.py:401 sabayon/livecd.py:477
+#: livecd.py:401 rogentos/livecd.py:477
 #, python-format
 msgid ""
 "The root filesystem you created is not large enough for this live image "
@@ -1299,13 +1299,13 @@ msgid "Do you want to start the network interfaces on this system?"
 msgstr "Активувати мережні інтерфейси цієї системи?"
 
 #: rescue.py:242 loader/driverdisk.c:666 loader/driverdisk.c:676
-#: loader/hdinstall.c:206 textw/constants_text.py:56 sabayon/utils.py:928
-#: sabayon/utils.py:1172
+#: loader/hdinstall.c:206 textw/constants_text.py:56 rogentos/utils.py:928
+#: rogentos/utils.py:1172
 msgid "Yes"
 msgstr "Так"
 
 #: rescue.py:242 rescue.py:244 loader/driverdisk.c:666 loader/driverdisk.c:676
-#: textw/constants_text.py:60 sabayon/utils.py:928 sabayon/utils.py:1172
+#: textw/constants_text.py:60 rogentos/utils.py:928 rogentos/utils.py:1172
 msgid "No"
 msgstr "Ні"
 
@@ -2095,8 +2095,8 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "Перевірка залежностей вибраних для встановлення пакунків"
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
-msgstr "Диск Sabayon"
+msgid "Rogentos Core CD"
+msgstr "Диск Rogentos"
 
 #: installclasses/corecd.py:48
 msgid ""
@@ -2108,8 +2108,8 @@ msgstr ""
 "графічних додатків. Це кращий вибір для серверно-орієнтованих об'єктів."
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
-msgstr "Sabayon Fluxbox"
+msgid "Rogentos Fluxbox"
+msgstr "Rogentos Fluxbox"
 
 #: installclasses/fluxbox.py:47
 msgid ""
@@ -2122,8 +2122,8 @@ msgstr ""
 "пакунки."
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
-msgstr "Стільничне середовище Sabayon GNOME"
+msgid "Rogentos GNOME Desktop"
+msgstr "Стільничне середовище Rogentos GNOME"
 
 #: installclasses/gnome.py:47
 msgid ""
@@ -2135,8 +2135,8 @@ msgstr ""
 "встановлення можна буде довантажити додаткові пакунки."
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
-msgstr "Стільничне середовище Sabayon KDE"
+msgid "Rogentos KDE"
+msgstr "Стільничне середовище Rogentos KDE"
 
 #: installclasses/kde.py:47
 msgid ""
@@ -6907,62 +6907,62 @@ msgstr "Уельська"
 msgid "Zulu"
 msgstr "Зулу"
 
-#: sabayon/livecd.py:65
+#: rogentos/livecd.py:65
 #, python-format
 msgid ""
 "The given location [%s] isn't a valid %s live CD to use as an installation "
 "source."
 msgstr "Вказаний шлях [%s] не є коректним %s live CD для встановлення."
 
-#: sabayon/livecd.py:108
-msgid "Recovering Sabayon."
-msgstr "Відновлення Sabayon."
+#: rogentos/livecd.py:108
+msgid "Recovering Rogentos."
+msgstr "Відновлення Rogentos."
 
-#: sabayon/livecd.py:114
-msgid "Installing Sabayon onto hard drive."
-msgstr "Завантаження Sabayon на жорсткий диск."
+#: rogentos/livecd.py:114
+msgid "Installing Rogentos onto hard drive."
+msgstr "Завантаження Rogentos на жорсткий диск."
 
-#: sabayon/livecd.py:128
-msgid "Configuring Sabayon"
-msgstr "Налаштовування Sabayon"
+#: rogentos/livecd.py:128
+msgid "Configuring Rogentos"
+msgstr "Налаштовування Rogentos"
 
-#: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
-msgstr "Налаштування Sabayon завершено"
+#: rogentos/livecd.py:158
+msgid "Rogentos configuration complete"
+msgstr "Налаштування Rogentos завершено"
 
-#: sabayon/utils.py:405
+#: rogentos/utils.py:405
 msgid "Configuring System Services"
 msgstr "Налаштування системних служб"
 
-#: sabayon/utils.py:684
+#: rogentos/utils.py:684
 msgid "An issue occured while installing"
 msgstr "В процесі встановлення виникла проблема"
 
-#: sabayon/utils.py:686
+#: rogentos/utils.py:686
 msgid "Meh."
 msgstr "Мех."
 
-#: sabayon/utils.py:687
+#: rogentos/utils.py:687
 msgid "Drivers installation issue"
 msgstr "Запуск процесу встановлення"
 
-#: sabayon/utils.py:716
+#: rogentos/utils.py:716
 msgid "System Installation"
 msgstr "Встановлення системи"
 
-#: sabayon/utils.py:848
+#: rogentos/utils.py:848
 msgid "Cleaning packages"
 msgstr "Очищення пакунків"
 
-#: sabayon/utils.py:873
+#: rogentos/utils.py:873
 msgid "Cleaning package"
 msgstr "Очищення пакунку"
 
-#: sabayon/utils.py:917
+#: rogentos/utils.py:917
 msgid "Installation complete"
 msgstr "Встановлення завершено"
 
-#: sabayon/utils.py:925
+#: rogentos/utils.py:925
 msgid ""
 "The following language packs are available for download (you need Internet), "
 "would you like to install them?"
@@ -6970,56 +6970,56 @@ msgstr ""
 "Наступні мовні пакунки є доступними до завантаження (потрібне інтернет-"
 "з'єднання), бажаєте встановити їх?"
 
-#: sabayon/utils.py:929
+#: rogentos/utils.py:929
 msgid "Language packs download"
 msgstr "Завантаження мовних пакунків"
 
-#: sabayon/utils.py:950
+#: rogentos/utils.py:950
 msgid "No language packs are available for download, sorry!"
 msgstr "Даруйте, немає мовних пакунків, що можна завантажити!"
 
-#: sabayon/utils.py:951 sabayon/utils.py:961
+#: rogentos/utils.py:951 rogentos/utils.py:961
 msgid "Language packs"
 msgstr "Встановлення пакунків"
 
-#: sabayon/utils.py:960
+#: rogentos/utils.py:960
 msgid "No language packs are available for install, sorry!"
 msgstr "Даруйте, немає мовних пакунків, що можна встановити!"
 
-#: sabayon/utils.py:970
+#: rogentos/utils.py:970
 msgid "Downloading package"
 msgstr "Завантаження пакунки"
 
-#: sabayon/utils.py:979
+#: rogentos/utils.py:979
 msgid "Installing package"
 msgstr "Встановлення пакунків"
 
-#: sabayon/utils.py:996 sabayon/utils.py:1006
+#: rogentos/utils.py:996 rogentos/utils.py:1006
 msgid "Reordering Entropy mirrors"
 msgstr ""
 
-#: sabayon/utils.py:996
+#: rogentos/utils.py:996
 msgid "can take some time..."
 msgstr ""
 
-#: sabayon/utils.py:1034
+#: rogentos/utils.py:1034
 msgid "No repositories specified in"
 msgstr "Немає потрібних сховищ"
 
-#: sabayon/utils.py:1036 sabayon/utils.py:1041 sabayon/utils.py:1048
+#: rogentos/utils.py:1036 rogentos/utils.py:1041 rogentos/utils.py:1048
 msgid "Repositories update"
 msgstr "Сховища оновлені"
 
-#: sabayon/utils.py:1040
+#: rogentos/utils.py:1040
 msgid "Unhandled exception"
 msgstr "Несподіваний виняток"
 
-#: sabayon/utils.py:1047
+#: rogentos/utils.py:1047
 #, fuzzy
 msgid "Cannot download repositories right now, no big deal"
 msgstr "Не можу завантижити мовні пакунки просто зараз, але то не страшно..."
 
-#: sabayon/utils.py:1170
+#: rogentos/utils.py:1170
 msgid ""
 "This medium contains many extra languages, would you like to keep them "
 "installed?"
@@ -7027,11 +7027,11 @@ msgstr ""
 "Цей диск містить переклади на багато інших мов. Ви хочете їх залишити після "
 "встановлення?"
 
-#: sabayon/utils.py:1173
+#: rogentos/utils.py:1173
 msgid "Language packs installation"
 msgstr "Встановлення мовних пакунків"
 
-#: sabayon/utils.py:1184
+#: rogentos/utils.py:1184
 msgid "Generating list of files to copy"
 msgstr "Створення переліку файлів до копіювання"
 

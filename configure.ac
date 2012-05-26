@@ -269,7 +269,7 @@ AC_CONFIG_FILES([Makefile
                  pixmaps/Makefile
                  pixmaps/rnotes/Makefile
                  po/Makefile.in
-                 sabayon/Makefile
+                 rogentos/Makefile
                  scripts/Makefile
                  storage/Makefile
                  storage/devicelibs/Makefile

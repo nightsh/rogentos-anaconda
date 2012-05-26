@@ -29,13 +29,13 @@ _ = lambda x: gettext.ldgettext("anaconda", x)
 
 import installmethod
 
-from sabayon import Entropy
-from sabayon.livecd import LiveCDCopyBackend
+from rogentos import Entropy
+from rogentos.livecd import LiveCDCopyBackend
 
 class InstallClass(BaseInstallClass):
 
-    id = "sabayon_xfce"
-    name = N_("Sabayon XFCE")
+    id = "rogentos_xfce"
+    name = N_("Rogentos XFCE")
 
     _pixmap_dirs = os.getenv("PIXMAPPATH", "/usr/share/pixmaps").split(":")
     for _pix_dir in _pixmap_dirs:

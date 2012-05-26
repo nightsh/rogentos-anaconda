@@ -173,7 +173,7 @@ msgstr ""
 #: textw/partition_text.py:186 textw/partition_text.py:192
 #: textw/partition_text.py:198 textw/partition_text.py:227
 #: textw/partition_text.py:273 textw/upgrade_text.py:181
-#: textw/upgrade_text.py:188 sabayon/livecd.py:476 sabayon/utils.py:1005
+#: textw/upgrade_text.py:188 rogentos/livecd.py:476 rogentos/utils.py:1005
 msgid "Error"
 msgstr "Σφάλμα"
 
@@ -204,7 +204,7 @@ msgstr ""
 #: yuminstall.py:930 yuminstall.py:1010 yuminstall.py:1016 yuminstall.py:1169
 #: yuminstall.py:1186 yuminstall.py:1239 yuminstall.py:1427 yuminstall.py:1446
 #: yuminstall.py:1469 storage/__init__.py:112 storage/__init__.py:219
-#: storage/__init__.py:1966 storage/dasd.py:139 sabayon/livecd.py:483
+#: storage/__init__.py:1966 storage/dasd.py:139 rogentos/livecd.py:483
 msgid "_Exit installer"
 msgstr "Έ_ξοδος από το πρόγραμμα εγκατάστασης"
 
@@ -475,7 +475,7 @@ msgstr "Η εγκατάσταση τώρα θα τερματιστεί."
 msgid "Exiting"
 msgstr "Έξοδος"
 
-#: gui.py:1403 livecd.py:126 text.py:271 upgrade.py:228 sabayon/livecd.py:69
+#: gui.py:1403 livecd.py:126 text.py:271 upgrade.py:228 rogentos/livecd.py:69
 msgid "Exit installer"
 msgstr "Έξοδος από το πρόγραμμα εγκατάστασης"
 
@@ -575,7 +575,7 @@ msgstr "Επανε_κκίνηση"
 
 #: image.py:251 livecd.py:406 packages.py:332 upgrade.py:236 yuminstall.py:930
 #: yuminstall.py:1016 yuminstall.py:1427 yuminstall.py:1469 yuminstall.py:1487
-#: ui/anaconda.glade.h:2 sabayon/livecd.py:482
+#: ui/anaconda.glade.h:2 rogentos/livecd.py:482
 msgid "_Back"
 msgstr "_Πίσω"
 
@@ -813,7 +813,7 @@ msgstr ""
 "anaconda.  Παρακαλώ προσθέστε τις ακόλουθες ενότητες και προσπαθήστε ξανά:\n"
 "%s"
 
-#: livecd.py:121 sabayon/livecd.py:64
+#: livecd.py:121 rogentos/livecd.py:64
 msgid "Unable to find image"
 msgstr "Δε βρέθηκε η εικόνα"
 
@@ -852,7 +852,7 @@ msgstr ""
 "Γίνεται εκτέλεση αλλαγών συστήματος αρχείων μετά την εγκατάσταση. Αυτό "
 "μπορεί να διαρκέσει λίγα λεπτά."
 
-#: livecd.py:401 sabayon/livecd.py:477
+#: livecd.py:401 rogentos/livecd.py:477
 #, python-format
 msgid ""
 "The root filesystem you created is not large enough for this live image "
@@ -1333,13 +1333,13 @@ msgid "Do you want to start the network interfaces on this system?"
 msgstr "Θέλετε να ξεκινήσετε τις συσκευές δικτύου σε αυτό το σύστημα;"
 
 #: rescue.py:242 loader/driverdisk.c:666 loader/driverdisk.c:676
-#: loader/hdinstall.c:206 textw/constants_text.py:56 sabayon/utils.py:928
-#: sabayon/utils.py:1172
+#: loader/hdinstall.c:206 textw/constants_text.py:56 rogentos/utils.py:928
+#: rogentos/utils.py:1172
 msgid "Yes"
 msgstr "Ναι"
 
 #: rescue.py:242 rescue.py:244 loader/driverdisk.c:666 loader/driverdisk.c:676
-#: textw/constants_text.py:60 sabayon/utils.py:928 sabayon/utils.py:1172
+#: textw/constants_text.py:60 rogentos/utils.py:928 rogentos/utils.py:1172
 msgid "No"
 msgstr "Όχι"
 
@@ -2137,7 +2137,7 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "Έλεγχος εξαρτήσεων των πακέτων που επιλέχθηκαν για εγκατάσταση"
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
+msgid "Rogentos Core CD"
 msgstr ""
 
 #: installclasses/corecd.py:48
@@ -2148,7 +2148,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
+msgid "Rogentos Fluxbox"
 msgstr ""
 
 #: installclasses/fluxbox.py:47
@@ -2159,7 +2159,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
+msgid "Rogentos GNOME Desktop"
 msgstr ""
 
 #: installclasses/gnome.py:47
@@ -2170,7 +2170,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
+msgid "Rogentos KDE"
 msgstr ""
 
 #: installclasses/kde.py:47
@@ -6995,7 +6995,7 @@ msgstr "Ουαλική"
 msgid "Zulu"
 msgstr "Ζουλού"
 
-#: sabayon/livecd.py:65
+#: rogentos/livecd.py:65
 #, fuzzy, python-format
 msgid ""
 "The given location [%s] isn't a valid %s live CD to use as an installation "
@@ -7004,122 +7004,122 @@ msgstr ""
 "Η δοσμένη τοποθεσία δεν είναι ένα έγκυρο %s live CD για να χρησιμοποιηθεί ως "
 "πηγή εγκατάστασης."
 
-#: sabayon/livecd.py:108
+#: rogentos/livecd.py:108
 #, fuzzy
-msgid "Recovering Sabayon."
+msgid "Recovering Rogentos."
 msgstr "Ρύθμιση VNC"
 
-#: sabayon/livecd.py:114
+#: rogentos/livecd.py:114
 #, fuzzy
-msgid "Installing Sabayon onto hard drive."
+msgid "Installing Rogentos onto hard drive."
 msgstr "Εγκατάσταση bootloader."
 
-#: sabayon/livecd.py:128
+#: rogentos/livecd.py:128
 #, fuzzy
-msgid "Configuring Sabayon"
+msgid "Configuring Rogentos"
 msgstr "Ρύθμιση VNC"
 
-#: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
+#: rogentos/livecd.py:158
+msgid "Rogentos configuration complete"
 msgstr ""
 
-#: sabayon/utils.py:405
+#: rogentos/utils.py:405
 #, fuzzy
 msgid "Configuring System Services"
 msgstr "Ρύθμιση συσκευών δικτύου"
 
-#: sabayon/utils.py:684
+#: rogentos/utils.py:684
 msgid "An issue occured while installing"
 msgstr ""
 
-#: sabayon/utils.py:686
+#: rogentos/utils.py:686
 msgid "Meh."
 msgstr ""
 
-#: sabayon/utils.py:687
+#: rogentos/utils.py:687
 #, fuzzy
 msgid "Drivers installation issue"
 msgstr "Γίνεται εκκίνηση της προόδου εγκατάστασης"
 
-#: sabayon/utils.py:716
+#: rogentos/utils.py:716
 #, fuzzy
 msgid "System Installation"
 msgstr "Μετά την εγκατάσταση"
 
-#: sabayon/utils.py:848
+#: rogentos/utils.py:848
 #, fuzzy
 msgid "Cleaning packages"
 msgstr "παλαιότερο/α πακέτο/α"
 
-#: sabayon/utils.py:873
+#: rogentos/utils.py:873
 #, fuzzy
 msgid "Cleaning package"
 msgstr "Απουσία πακέτου"
 
-#: sabayon/utils.py:917
+#: rogentos/utils.py:917
 #, fuzzy
 msgid "Installation complete"
 msgstr "Κλειδί εγκατάστασης"
 
-#: sabayon/utils.py:925
+#: rogentos/utils.py:925
 msgid ""
 "The following language packs are available for download (you need Internet), "
 "would you like to install them?"
 msgstr ""
 
-#: sabayon/utils.py:929
+#: rogentos/utils.py:929
 #, fuzzy
 msgid "Language packs download"
 msgstr "Εγκατάσταση πακέτου"
 
-#: sabayon/utils.py:950
+#: rogentos/utils.py:950
 msgid "No language packs are available for download, sorry!"
 msgstr ""
 
-#: sabayon/utils.py:951 sabayon/utils.py:961
+#: rogentos/utils.py:951 rogentos/utils.py:961
 #, fuzzy
 msgid "Language packs"
 msgstr "Εγκατάσταση πακέτου"
 
-#: sabayon/utils.py:960
+#: rogentos/utils.py:960
 msgid "No language packs are available for install, sorry!"
 msgstr ""
 
-#: sabayon/utils.py:970
+#: rogentos/utils.py:970
 #, fuzzy
 msgid "Downloading package"
 msgstr "Απουσία πακέτου"
 
-#: sabayon/utils.py:979
+#: rogentos/utils.py:979
 #, fuzzy
 msgid "Installing package"
 msgstr "Εγκατάσταση πακέτων"
 
-#: sabayon/utils.py:996 sabayon/utils.py:1006
+#: rogentos/utils.py:996 rogentos/utils.py:1006
 msgid "Reordering Entropy mirrors"
 msgstr ""
 
-#: sabayon/utils.py:996
+#: rogentos/utils.py:996
 msgid "can take some time..."
 msgstr ""
 
-#: sabayon/utils.py:1034
+#: rogentos/utils.py:1034
 msgid "No repositories specified in"
 msgstr ""
 
-#: sabayon/utils.py:1036 sabayon/utils.py:1041 sabayon/utils.py:1048
+#: rogentos/utils.py:1036 rogentos/utils.py:1041 rogentos/utils.py:1048
 msgid "Repositories update"
 msgstr ""
 
-#: sabayon/utils.py:1040
+#: rogentos/utils.py:1040
 msgid "Unhandled exception"
 msgstr ""
 
-#: sabayon/utils.py:1047
+#: rogentos/utils.py:1047
 msgid "Cannot download repositories right now, no big deal"
 msgstr ""
 
-#: sabayon/utils.py:1170
+#: rogentos/utils.py:1170
 #, fuzzy
 msgid ""
 "This medium contains many extra languages, would you like to keep them "
@@ -7127,12 +7127,12 @@ msgid ""
 msgstr ""
 "Ποια γλώσσα θα θέλατε να χρησιμοποιηθεί κατά τη διαδικασία εγκατάστασης;"
 
-#: sabayon/utils.py:1173
+#: rogentos/utils.py:1173
 #, fuzzy
 msgid "Language packs installation"
 msgstr "Εγκατάσταση πακέτου"
 
-#: sabayon/utils.py:1184
+#: rogentos/utils.py:1184
 msgid "Generating list of files to copy"
 msgstr ""
 

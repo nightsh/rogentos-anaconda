@@ -184,8 +184,8 @@ class Language(object):
         self.instLang = os.environ.get("LANG", self._default)
         self.systemLang = os.environ.get("LANG", self._default)
 
-        # Sabayon language packs options, configured by frontends
-        # See Sabayon bug 2518
+        # Rogentos language packs options, configured by frontends
+        # See Rogentos bug 2518
         self.fullLanguageSupport = False
         self.asianLanguageSupport = False
 
@@ -274,7 +274,7 @@ class Language(object):
         return self.nativeLangNames[lang]
 
     def write(self, instPath):
-        # lxnay here: language setup is done inside sabayon.utils
+        # lxnay here: language setup is done inside rogentos.utils
         return
 
     def writeKS(self, f):

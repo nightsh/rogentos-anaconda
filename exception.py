@@ -93,7 +93,7 @@ class AnacondaExceptionHandler(ExceptionHandler):
         # see a similar comment at runDebug()
 
         try:
-            from sabayon import Entropy
+            from rogentos import Entropy
             from entropy.cache import EntropyCacher
             EntropyCacher().stop()
             etp = Entropy()

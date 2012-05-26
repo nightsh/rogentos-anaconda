@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: anaconda-devel-list@redhat.com\n"
 "POT-Creation-Date: 2010-08-07 10:23+0200\n"
 "PO-Revision-Date: 2010-11-26 22:56+0100\n"
-"Last-Translator: Fabio Erculiani <lxnay@sabayonlinux.org>\n"
+"Last-Translator: Fabio Erculiani <lxnay@rogentoslinux.org>\n"
 "Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -268,8 +268,8 @@ msgstr "Si è verificato un errore durante il trasferimento dell'immagine d'inst
 #: textw/partition_text.py:273
 #: textw/upgrade_text.py:181
 #: textw/upgrade_text.py:188
-#: sabayon/livecd.py:476
-#: sabayon/utils.py:1005
+#: rogentos/livecd.py:476
+#: rogentos/utils.py:1005
 msgid "Error"
 msgstr "Errore"
 
@@ -330,7 +330,7 @@ msgstr ""
 #: storage/__init__.py:219
 #: storage/__init__.py:1966
 #: storage/dasd.py:139
-#: sabayon/livecd.py:483
+#: rogentos/livecd.py:483
 msgid "_Exit installer"
 msgstr "_Esci dal programma d'installazione"
 
@@ -629,7 +629,7 @@ msgstr "Uscita in corso"
 #: livecd.py:126
 #: text.py:271
 #: upgrade.py:228
-#: sabayon/livecd.py:69
+#: rogentos/livecd.py:69
 msgid "Exit installer"
 msgstr "Esci dall'installazione"
 
@@ -718,7 +718,7 @@ msgstr "_Riavvia"
 #: yuminstall.py:1469
 #: yuminstall.py:1487
 #: ui/anaconda.glade.h:2
-#: sabayon/livecd.py:482
+#: rogentos/livecd.py:482
 msgid "_Back"
 msgstr "_Indietro"
 
@@ -904,7 +904,7 @@ msgstr ""
 "%s"
 
 #: livecd.py:121
-#: sabayon/livecd.py:64
+#: rogentos/livecd.py:64
 msgid "Unable to find image"
 msgstr "Impossibile trovare l'immagine"
 
@@ -932,7 +932,7 @@ msgid "Performing post-installation filesystem changes.  This may take several m
 msgstr "Applicazione delle modifiche post-installazione al filesystem.  Potrebbero occorrere alcuni minuti."
 
 #: livecd.py:401
-#: sabayon/livecd.py:477
+#: rogentos/livecd.py:477
 #, python-format
 msgid "The root filesystem you created is not large enough for this live image (%.2f MB required)."
 msgstr "Il filesystem root appena creato non è abbastanza grande per questa immagine live (%.2f MB richiesti)."
@@ -1352,8 +1352,8 @@ msgstr "Avviare le interfacce di rete su questo sistema?"
 #: loader/driverdisk.c:676
 #: loader/hdinstall.c:206
 #: textw/constants_text.py:56
-#: sabayon/utils.py:928
-#: sabayon/utils.py:1172
+#: rogentos/utils.py:928
+#: rogentos/utils.py:1172
 msgid "Yes"
 msgstr "Sì"
 
@@ -1362,8 +1362,8 @@ msgstr "Sì"
 #: loader/driverdisk.c:666
 #: loader/driverdisk.c:676
 #: textw/constants_text.py:60
-#: sabayon/utils.py:928
-#: sabayon/utils.py:1172
+#: rogentos/utils.py:928
+#: rogentos/utils.py:1172
 msgid "No"
 msgstr "No"
 
@@ -2086,32 +2086,32 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "Controllo delle dipendenze dei pacchetti selezionati per l'installazione"
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
-msgstr "Sabayon Core CD"
+msgid "Rogentos Core CD"
+msgstr "Rogentos Core CD"
 
 #: installclasses/corecd.py:48
 msgid "Select this installation type to just install a Core System without graphical applications. This is the best choice for Server-oriented deployments."
 msgstr "Seleziona questo metodo di installazione per installare un sistema Core, senza applicazioni grafiche. Questa è la migliore scelta per un sistema Server."
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
-msgstr "Sabayon Fluxbox"
+msgid "Rogentos Fluxbox"
+msgstr "Rogentos Fluxbox"
 
 #: installclasses/fluxbox.py:47
 msgid "Select this installation type for a default installation with the Fluxbox geeky minimal environment. After this installation process you will be able to install additional packages."
 msgstr "Seleziona questa modalità per una installazione con l'ambiente minimale Fluxbox. Dopo l'installazione potrai aggiungere pacchetti addizionali."
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
-msgstr "Sabayon GNOME Desktop"
+msgid "Rogentos GNOME Desktop"
+msgstr "Rogentos GNOME Desktop"
 
 #: installclasses/gnome.py:47
 msgid "Select this installation type for a default installation with the GNOME desktop environment. After this installation process you will be able to install additional packages."
 msgstr "Seleziona questo tipo di installazione per usare l'ambiente desktop GNOME. Potrai installare ulteriori pacchetti in seguito."
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
-msgstr "Sabayon KDE"
+msgid "Rogentos KDE"
+msgstr "Rogentos KDE"
 
 #: installclasses/kde.py:47
 msgid "Select this installation type for a default installation with the KDE desktop environment. After this installation process you will be able to install additional packages."
@@ -6361,124 +6361,124 @@ msgstr "Welsh"
 msgid "Zulu"
 msgstr "Zulu"
 
-#: sabayon/livecd.py:65
+#: rogentos/livecd.py:65
 #, fuzzy, python-format
 msgid "The given location [%s] isn't a valid %s live CD to use as an installation source."
 msgstr "La locazione data non è un valido live CD %s da usare come sorgente d'installazione."
 
-#: sabayon/livecd.py:108
-msgid "Recovering Sabayon."
-msgstr "Ripristino Sabayon."
+#: rogentos/livecd.py:108
+msgid "Recovering Rogentos."
+msgstr "Ripristino Rogentos."
 
-#: sabayon/livecd.py:114
-msgid "Installing Sabayon onto hard drive."
-msgstr "Installazione Sabayon su disco."
+#: rogentos/livecd.py:114
+msgid "Installing Rogentos onto hard drive."
+msgstr "Installazione Rogentos su disco."
 
-#: sabayon/livecd.py:128
-msgid "Configuring Sabayon"
-msgstr "Configurazione Sabayon"
+#: rogentos/livecd.py:128
+msgid "Configuring Rogentos"
+msgstr "Configurazione Rogentos"
 
-#: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
-msgstr "Configurazione Sabayon completata"
+#: rogentos/livecd.py:158
+msgid "Rogentos configuration complete"
+msgstr "Configurazione Rogentos completata"
 
-#: sabayon/utils.py:405
+#: rogentos/utils.py:405
 msgid "Configuring System Services"
 msgstr "Configurazione Servizi"
 
-#: sabayon/utils.py:684
+#: rogentos/utils.py:684
 msgid "An issue occured while installing"
 msgstr ""
 
-#: sabayon/utils.py:686
+#: rogentos/utils.py:686
 msgid "Meh."
 msgstr "Meh."
 
-#: sabayon/utils.py:687
+#: rogentos/utils.py:687
 msgid "Drivers installation issue"
 msgstr "Problema di installazione drivers"
 
-#: sabayon/utils.py:716
+#: rogentos/utils.py:716
 msgid "System Installation"
 msgstr "Installazione Sistema"
 
-#: sabayon/utils.py:848
+#: rogentos/utils.py:848
 msgid "Cleaning packages"
 msgstr "Pulizia pacchetti"
 
-#: sabayon/utils.py:873
+#: rogentos/utils.py:873
 msgid "Cleaning package"
 msgstr "Pulizia pacchetto"
 
-#: sabayon/utils.py:917
+#: rogentos/utils.py:917
 msgid "Installation complete"
 msgstr "Installazione completata"
 
-#: sabayon/utils.py:925
+#: rogentos/utils.py:925
 msgid "The following language packs are available for download (you need Internet), would you like to install them?"
 msgstr "I language pack seguenti sono disponibili per il download (Internet richiesto), vuoi scaricarli?"
 
-#: sabayon/utils.py:929
+#: rogentos/utils.py:929
 msgid "Language packs download"
 msgstr "Scaricamento pacchetti lingua"
 
-#: sabayon/utils.py:950
+#: rogentos/utils.py:950
 msgid "No language packs are available for download, sorry!"
 msgstr "Nessun pacchetto lingua disponibile per il download, mi dispiace!"
 
-#: sabayon/utils.py:951
-#: sabayon/utils.py:961
+#: rogentos/utils.py:951
+#: rogentos/utils.py:961
 msgid "Language packs"
 msgstr "Pacchetti lingua"
 
-#: sabayon/utils.py:960
+#: rogentos/utils.py:960
 msgid "No language packs are available for install, sorry!"
 msgstr "Nessun pacchetto lingua è disponibile per l'installazione, mi dispiace!"
 
-#: sabayon/utils.py:970
+#: rogentos/utils.py:970
 msgid "Downloading package"
 msgstr "Scaricamento pacchetto"
 
-#: sabayon/utils.py:979
+#: rogentos/utils.py:979
 msgid "Installing package"
 msgstr "Installazione dei pacchetti"
 
-#: sabayon/utils.py:996
-#: sabayon/utils.py:1006
+#: rogentos/utils.py:996
+#: rogentos/utils.py:1006
 msgid "Reordering Entropy mirrors"
 msgstr "Riordinamento mirror Entropy."
 
-#: sabayon/utils.py:996
+#: rogentos/utils.py:996
 msgid "can take some time..."
 msgstr "può impiegare un po' di tempo..."
 
-#: sabayon/utils.py:1034
+#: rogentos/utils.py:1034
 msgid "No repositories specified in"
 msgstr "Nessuna repository specificata in"
 
-#: sabayon/utils.py:1036
-#: sabayon/utils.py:1041
-#: sabayon/utils.py:1048
+#: rogentos/utils.py:1036
+#: rogentos/utils.py:1041
+#: rogentos/utils.py:1048
 msgid "Repositories update"
 msgstr "Aggiornamento repository"
 
-#: sabayon/utils.py:1040
+#: rogentos/utils.py:1040
 msgid "Unhandled exception"
 msgstr "Eccezione non gestita"
 
-#: sabayon/utils.py:1047
+#: rogentos/utils.py:1047
 msgid "Cannot download repositories right now, no big deal"
 msgstr "Impossibile scaricare dalle repository al momento, non è un grosso problema"
 
-#: sabayon/utils.py:1170
+#: rogentos/utils.py:1170
 msgid "This medium contains many extra languages, would you like to keep them installed?"
 msgstr "Questo supporto contiene molte language pack extra, vuoi mantenerle sul sistema?"
 
-#: sabayon/utils.py:1173
+#: rogentos/utils.py:1173
 msgid "Language packs installation"
 msgstr "Installazione dei pacchetti lingua"
 
-#: sabayon/utils.py:1184
+#: rogentos/utils.py:1184
 msgid "Generating list of files to copy"
 msgstr "Generazione lista file da copiare"
 

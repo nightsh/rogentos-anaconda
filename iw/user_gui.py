@@ -27,7 +27,7 @@ from flags import flags
 from constants import *
 import cracklib
 import _isys
-from sabayon.const import LIVE_USER
+from rogentos.const import LIVE_USER
 import grp
 
 import gettext

@@ -115,7 +115,7 @@ class UserPasswordWindow:
                                        "(non-administrative) use.")),
                      0, 0, (0, 0, 0, 1))
 
-        from sabayon.const import LIVE_USER
+        from rogentos.const import LIVE_USER
         live_user_data = anaconda.users.otherUsers.get(LIVE_USER, {})
 
         entry_username = Entry(24, text=live_user_data.get("username", ''))

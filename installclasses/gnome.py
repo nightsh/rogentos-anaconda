@@ -29,12 +29,12 @@ _ = lambda x: gettext.ldgettext("anaconda", x)
 
 import installmethod
 
-from sabayon import Entropy
-from sabayon.livecd import LiveCDCopyBackend
+from rogentos import Entropy
+from rogentos.livecd import LiveCDCopyBackend
 
 class InstallClass(BaseInstallClass):
 
-    id = "sabayon_gnome"
+    id = "rogentos_gnome"
 
     _pixmap_dirs = os.getenv("PIXMAPPATH", "/usr/share/pixmaps").split(":")
     for _pix_dir in _pixmap_dirs:
@@ -42,7 +42,7 @@ class InstallClass(BaseInstallClass):
         if os.path.isfile(_pix_path):
             pixmap = _pix_path
 
-    name = N_("Sabayon GNOME Desktop")
+    name = N_("Rogentos GNOME Desktop")
     dmrc = "gnome"
     _description = N_("Select this installation type for a default installation "
                      "with the GNOME desktop environment. "

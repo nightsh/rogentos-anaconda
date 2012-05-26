@@ -5,7 +5,7 @@
 # Nikola Štohanzl <niko@srnet.cz>, 2006.
 # Milan Keršláger <kerslage@linux.cz>, 2007, 2010.
 # Adam Pribyl <pribyl@lowlevel.cz>, 2007, 2008.
-# Jakub Zámečník <jakubz@xios.cz>, (Sabayon part), 2011
+# Jakub Zámečník <jakubz@xios.cz>, (Rogentos part), 2011
 #
 msgid ""
 msgstr ""
@@ -256,8 +256,8 @@ msgstr "Došlo k chybě při přenosu instalačního obrazu na pevný disk. Disk
 #: textw/partition_text.py:273
 #: textw/upgrade_text.py:181
 #: textw/upgrade_text.py:188
-#: sabayon/livecd.py:476
-#: sabayon/utils.py:1005
+#: rogentos/livecd.py:476
+#: rogentos/utils.py:1005
 msgid "Error"
 msgstr "Chyba"
 
@@ -318,7 +318,7 @@ msgstr ""
 #: storage/__init__.py:219
 #: storage/__init__.py:1966
 #: storage/dasd.py:139
-#: sabayon/livecd.py:483
+#: rogentos/livecd.py:483
 msgid "_Exit installer"
 msgstr "_Ukončit instalátor"
 
@@ -619,7 +619,7 @@ msgstr "Ukončování"
 #: livecd.py:126
 #: text.py:271
 #: upgrade.py:228
-#: sabayon/livecd.py:69
+#: rogentos/livecd.py:69
 msgid "Exit installer"
 msgstr "Ukončit instalátor"
 
@@ -708,7 +708,7 @@ msgstr "_Restartovat"
 #: yuminstall.py:1469
 #: yuminstall.py:1487
 #: ui/anaconda.glade.h:2
-#: sabayon/livecd.py:482
+#: rogentos/livecd.py:482
 msgid "_Back"
 msgstr "_Předchozí"
 
@@ -894,7 +894,7 @@ msgstr ""
 "%s"
 
 #: livecd.py:121
-#: sabayon/livecd.py:64
+#: rogentos/livecd.py:64
 msgid "Unable to find image"
 msgstr "Nelze najít obraz"
 
@@ -922,7 +922,7 @@ msgid "Performing post-installation filesystem changes.  This may take several m
 msgstr "Provádění poinstalačních změn v souborovém systému, které mohou trvat několik minut."
 
 #: livecd.py:401
-#: sabayon/livecd.py:477
+#: rogentos/livecd.py:477
 #, python-format
 msgid "The root filesystem you created is not large enough for this live image (%.2f MB required)."
 msgstr "Vytvořený kořenový systém souborů není pro tento live obraz dost velký (potřebuje %.2f MB)."
@@ -1342,8 +1342,8 @@ msgstr "Chcete aktivovat síťová rozhraní?"
 #: loader/driverdisk.c:676
 #: loader/hdinstall.c:206
 #: textw/constants_text.py:56
-#: sabayon/utils.py:928
-#: sabayon/utils.py:1172
+#: rogentos/utils.py:928
+#: rogentos/utils.py:1172
 msgid "Yes"
 msgstr "Ano"
 
@@ -1352,8 +1352,8 @@ msgstr "Ano"
 #: loader/driverdisk.c:666
 #: loader/driverdisk.c:676
 #: textw/constants_text.py:60
-#: sabayon/utils.py:928
-#: sabayon/utils.py:1172
+#: rogentos/utils.py:928
+#: rogentos/utils.py:1172
 msgid "No"
 msgstr "Ne"
 
@@ -2078,7 +2078,7 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "Kontroluji závislosti mezi balíčky vybranými pro instalaci"
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
+msgid "Rogentos Core CD"
 msgstr ""
 
 #: installclasses/corecd.py:48
@@ -2086,7 +2086,7 @@ msgid "Select this installation type to just install a Core System without graph
 msgstr ""
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
+msgid "Rogentos Fluxbox"
 msgstr ""
 
 #: installclasses/fluxbox.py:47
@@ -2094,7 +2094,7 @@ msgid "Select this installation type for a default installation with the Fluxbox
 msgstr ""
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
+msgid "Rogentos GNOME Desktop"
 msgstr ""
 
 #: installclasses/gnome.py:47
@@ -2102,7 +2102,7 @@ msgid "Select this installation type for a default installation with the GNOME d
 msgstr ""
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
+msgid "Rogentos KDE"
 msgstr ""
 
 #: installclasses/kde.py:47
@@ -6352,123 +6352,123 @@ msgstr "Velština"
 msgid "Zulu"
 msgstr "Zulština"
 
-#: sabayon/livecd.py:65
+#: rogentos/livecd.py:65
 msgid "The given location [%s] isn't a valid %s live CD to use as an installation source."
 msgstr "Zadané místo není platným [%s] Live CD, které by mohlo být použito jako zdroj pro instalaci."
 
-#: sabayon/livecd.py:108
-msgid "Recovering Sabayon."
-msgstr "Obnovení Sabayon."
+#: rogentos/livecd.py:108
+msgid "Recovering Rogentos."
+msgstr "Obnovení Rogentos."
 
-#: sabayon/livecd.py:114
-msgid "Installing Sabayon onto hard drive."
-msgstr "Instalace Sabayon na hard disk."
+#: rogentos/livecd.py:114
+msgid "Installing Rogentos onto hard drive."
+msgstr "Instalace Rogentos na hard disk."
 
-#: sabayon/livecd.py:128
-msgid "Configuring Sabayon"
-msgstr "Konfigurace Sabayon"
+#: rogentos/livecd.py:128
+msgid "Configuring Rogentos"
+msgstr "Konfigurace Rogentos"
 
-#: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
-msgstr "Konfigurace Sabayon je kompletní"
+#: rogentos/livecd.py:158
+msgid "Rogentos configuration complete"
+msgstr "Konfigurace Rogentos je kompletní"
 
-#: sabayon/utils.py:405
+#: rogentos/utils.py:405
 msgid "Configuring System Services"
 msgstr "Nastavení systémových služeb"
 
-#: sabayon/utils.py:684
+#: rogentos/utils.py:684
 msgid "An issue occured while installing"
 msgstr "Došlo k problému při instalaci"
 
-#: sabayon/utils.py:686
+#: rogentos/utils.py:686
 msgid "Meh."
 msgstr ""
 
-#: sabayon/utils.py:687
+#: rogentos/utils.py:687
 msgid "Drivers installation issue"
 msgstr "Chyba při instalaci ovladačů"
 
-#: sabayon/utils.py:716
+#: rogentos/utils.py:716
 msgid "System Installation"
 msgstr "Instalace systému"
 
-#: sabayon/utils.py:848
+#: rogentos/utils.py:848
 msgid "Cleaning packages"
 msgstr "Vyčištění balíčků"
 
-#: sabayon/utils.py:873
+#: rogentos/utils.py:873
 msgid "Cleaning package"
 msgstr "Vyčišení balíčku"
 
-#: sabayon/utils.py:917
+#: rogentos/utils.py:917
 msgid "Installation complete"
 msgstr "Instalace je kompletní"
 
-#: sabayon/utils.py:925
+#: rogentos/utils.py:925
 msgid "The following language packs are available for download (you need Internet), would you like to install them?"
 msgstr "Následující jazykové balíčky jsou dostupné pro stažení (potřebujete připojení k internetu), přejete si je nainstalovat?"
 
-#: sabayon/utils.py:929
+#: rogentos/utils.py:929
 msgid "Language packs download"
 msgstr "Stažení jazykových balíčků"
 
-#: sabayon/utils.py:950
+#: rogentos/utils.py:950
 msgid "No language packs are available for download, sorry!"
 msgstr "Žádné jazykové balíčky nejsou k dispozici pro stažení!"
 
-#: sabayon/utils.py:951
-#: sabayon/utils.py:961
+#: rogentos/utils.py:951
+#: rogentos/utils.py:961
 msgid "Language packs"
 msgstr "Jazykové balíčky"
 
-#: sabayon/utils.py:960
+#: rogentos/utils.py:960
 msgid "No language packs are available for install, sorry!"
 msgstr "Žádné jazykové balíčky nejsou k dispozici pro instalaci!"
 
-#: sabayon/utils.py:970
+#: rogentos/utils.py:970
 msgid "Downloading package"
 msgstr "Stahování balíčku"
 
-#: sabayon/utils.py:979
+#: rogentos/utils.py:979
 msgid "Installing package"
 msgstr "Instalace balíčků"
 
-#: sabayon/utils.py:996
-#: sabayon/utils.py:1006
+#: rogentos/utils.py:996
+#: rogentos/utils.py:1006
 msgid "Reordering Entropy mirrors"
 msgstr "Změna pořadí Entropy zrdcadel"
 
-#: sabayon/utils.py:996
+#: rogentos/utils.py:996
 msgid "can take some time..."
 msgstr "může trvat nějaký čas..."
 
-#: sabayon/utils.py:1034
+#: rogentos/utils.py:1034
 msgid "No repositories specified in"
 msgstr "Není specifikovaný repozitáře v"
 
-#: sabayon/utils.py:1036
-#: sabayon/utils.py:1041
-#: sabayon/utils.py:1048
+#: rogentos/utils.py:1036
+#: rogentos/utils.py:1041
+#: rogentos/utils.py:1048
 msgid "Repositories update"
 msgstr "Aktualizace repozitáře"
 
-#: sabayon/utils.py:1040
+#: rogentos/utils.py:1040
 msgid "Unhandled exception"
 msgstr "Neošetřená výjimka"
 
-#: sabayon/utils.py:1047
+#: rogentos/utils.py:1047
 msgid "Cannot download repositories right now, no big deal"
 msgstr "Nelze stáhnout repozitáře v tento okamžik, žádný velký problém"
 
-#: sabayon/utils.py:1170
+#: rogentos/utils.py:1170
 msgid "This medium contains many extra languages, would you like to keep them installed?"
 msgstr "Toto médium obsahuje mnoho dalších jazyků, chcete je ponechat?"
 
-#: sabayon/utils.py:1173
+#: rogentos/utils.py:1173
 msgid "Language packs installation"
 msgstr "Instalace jazykových balíčků"
 
-#: sabayon/utils.py:1184
+#: rogentos/utils.py:1184
 msgid "Generating list of files to copy"
 msgstr "Generování seznamu souborů ke kopírování"
 

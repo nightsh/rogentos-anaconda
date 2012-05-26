@@ -718,7 +718,7 @@ class Anaconda(object):
             self.network.write(instPath=self.rootPath, anaconda=self)
             self.desktop.write(self.rootPath)
             self.users.write(self.rootPath)
-            # Sabayon doesn't ship with authconfig
+            # Rogentos doesn't ship with authconfig
             # authconfig causes massive breakage to Gentoo's pambase file
             # layout renaming files around without notification
             # self.security.write(self.rootPath)
@@ -815,7 +815,7 @@ class Anaconda(object):
 if __name__ == "__main__":
     setupPythonPath()
 
-    if os.getenv("SABAYON_DEBUG") is None:
+    if os.getenv("ROGENTOS_DEBUG") is None:
         sys.stderr = open("/tmp/anaconda.stderr.log", "w")
 
     # Allow a file to be loaded as early as possible

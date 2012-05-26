@@ -647,7 +647,7 @@ class Network:
         # hostname
         f = open(instPath+"/etc/conf.d/hostname","w")
         if not self.hostname:
-            self.hostname = "sabayon"
+            self.hostname = "rogentos"
         f.write("hostname=\""+self.hostname + "\"\n")
         f.flush()
         f.close()

@@ -29,17 +29,17 @@ _ = lambda x: gettext.ldgettext("anaconda", x)
 
 import installmethod
 
-from sabayon import Entropy
-from sabayon.livecd import LiveCDCopyBackend
+from rogentos import Entropy
+from rogentos.livecd import LiveCDCopyBackend
 
 class InstallClass(BaseInstallClass):
 
-    id = "sabayon_corecd"
-    name = N_("Sabayon Core")
+    id = "rogentos_corecd"
+    name = N_("Rogentos Core")
 
     _pixmap_dirs = os.getenv("PIXMAPPATH", "/usr/share/pixmaps").split(":")
     for _pix_dir in _pixmap_dirs:
-        _pix_path = os.path.join(_pix_dir, "sabayon-core.png")
+        _pix_path = os.path.join(_pix_dir, "rogentos-core.png")
         if os.path.isfile(_pix_path):
             pixmap = _pix_path
 

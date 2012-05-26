@@ -1,15 +1,15 @@
 #!/bin/sh
 
 _fetch_ver="5"
-[[ -f "/etc/sabayon-edition" ]] && _fetch_ver=$(cat /etc/sabayon-edition | cut -d" " -f 3)
+[[ -f "/etc/rogentos-edition" ]] && _fetch_ver=$(cat /etc/rogentos-edition | cut -d" " -f 3)
 
 FETCH_VER=${FETCH_VER:-${_fetch_ver}}
 FETCH_FN="pyanaconda-${FETCH_VER}.tar.bz2"
-FETCH_URL=${FETCH_URL:-"http://static.sabayon.org/sabayon/installer/${FETCH_FN}"}
+FETCH_URL=${FETCH_URL:-"http://static.rogentos.org/rogentos/installer/${FETCH_FN}"}
 
 cd /tmp
 rm -rf "/tmp/${FETCH_FN}"*
-echo "Fetching Sabayon Anaconda Installer from ${FETCH_URL}..."
+echo "Fetching Rogentos Anaconda Installer from ${FETCH_URL}..."
 wget ${FETCH_WGET_ARGS} "${FETCH_URL}" "${FETCH_URL}.md5"
 if [ "${?}" = "0" ]; then
 	md5sum -c "${FETCH_FN}.md5" || { echo "OUCH, md5 does not match" && exit 1; }
