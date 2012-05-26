@@ -2078,7 +2078,7 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "Kontroluji závislosti mezi balíčky vybranými pro instalaci"
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
+msgid "Rogentos Core CD"
 msgstr ""
 
 #: installclasses/corecd.py:48
@@ -2086,7 +2086,7 @@ msgid "Select this installation type to just install a Core System without graph
 msgstr ""
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
+msgid "Rogentos Fluxbox"
 msgstr ""
 
 #: installclasses/fluxbox.py:47
@@ -2094,7 +2094,7 @@ msgid "Select this installation type for a default installation with the Fluxbox
 msgstr ""
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
+msgid "Rogentos GNOME Desktop"
 msgstr ""
 
 #: installclasses/gnome.py:47
@@ -2102,7 +2102,7 @@ msgid "Select this installation type for a default installation with the GNOME d
 msgstr ""
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
+msgid "Rogentos KDE"
 msgstr ""
 
 #: installclasses/kde.py:47
@@ -6357,20 +6357,20 @@ msgid "The given location [%s] isn't a valid %s live CD to use as an installatio
 msgstr "Zadané místo není platným [%s] Live CD, které by mohlo být použito jako zdroj pro instalaci."
 
 #: sabayon/livecd.py:108
-msgid "Recovering Sabayon."
-msgstr "Obnovení Sabayon."
+msgid "Recovering Rogentos."
+msgstr "Obnovení Rogentos."
 
 #: sabayon/livecd.py:114
-msgid "Installing Sabayon onto hard drive."
-msgstr "Instalace Sabayon na hard disk."
+msgid "Installing Rogentos onto hard drive."
+msgstr "Instalace Rogentos na hard disk."
 
 #: sabayon/livecd.py:128
-msgid "Configuring Sabayon"
-msgstr "Konfigurace Sabayon"
+msgid "Configuring Rogentos"
+msgstr "Konfigurace Rogentos"
 
 #: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
-msgstr "Konfigurace Sabayon je kompletní"
+msgid "Rogentos configuration complete"
+msgstr "Konfigurace Rogentos je kompletní"
 
 #: sabayon/utils.py:405
 msgid "Configuring System Services"

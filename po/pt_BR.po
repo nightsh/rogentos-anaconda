@@ -2088,36 +2088,36 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "Verificando dependências dos pacotes selecionados para instalação"
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
-msgstr "CD do Sabayon Core"
+msgid "Rogentos Core CD"
+msgstr "CD do Rogentos Core"
 
 #: installclasses/corecd.py:48
 msgid "Select this installation type to just install a Core System without graphical applications. This is the best choice for Server-oriented deployments."
 msgstr "Selecione este tipo se você quer um  sistema básico, sem aplicativos gráficos. Pode ser a melhor escolha para um servidor."
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
-msgstr "Sabayon com Fluxbox"
+msgid "Rogentos Fluxbox"
+msgstr "Rogentos com Fluxbox"
 
 #: installclasses/fluxbox.py:47
 msgid "Select this installation type for a default installation with the Fluxbox geeky minimal environment. After this installation process you will be able to install additional packages."
 msgstr "Selecione este tipo para uma instalação apenas com Fluxbox. Depois de instalado, você poderá adicionar outros pacotes."
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
-msgstr "Sabayon com Desktop GNOME"
+msgid "Rogentos GNOME Desktop"
+msgstr "Rogentos com Desktop GNOME"
 
 #: installclasses/gnome.py:47
 msgid "Select this installation type for a default installation with the GNOME desktop environment. After this installation process you will be able to install additional packages."
-msgstr "Escolha este tipo para instalar um sabayon com GNOME. depois da instalação, poderá adicionar KDE ou outras coisas."
+msgstr "Escolha este tipo para instalar um rogentos com GNOME. depois da instalação, poderá adicionar KDE ou outras coisas."
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
-msgstr "Sabayon com KDE"
+msgid "Rogentos KDE"
+msgstr "Rogentos com KDE"
 
 #: installclasses/kde.py:47
 msgid "Select this installation type for a default installation with the KDE desktop environment. After this installation process you will be able to install additional packages."
-msgstr "Selecione este tipo para obter um Sabayon com KDE. Após a instalação completada, poderá adicionar GNOME e quaisquer outros pacotes."
+msgstr "Selecione este tipo para obter um Rogentos com KDE. Após a instalação completada, poderá adicionar GNOME e quaisquer outros pacotes."
 
 #: iw/GroupSelector.py:147
 #, python-format
@@ -6364,20 +6364,20 @@ msgid "The given location [%s] isn't a valid %s live CD to use as an installatio
 msgstr "O caminho [%s] não é válido para o %s live CD a ser usado na instalação"
 
 #: sabayon/livecd.py:108
-msgid "Recovering Sabayon."
-msgstr "Recuperando o Sabayon."
+msgid "Recovering Rogentos."
+msgstr "Recuperando o Rogentos."
 
 #: sabayon/livecd.py:114
-msgid "Installing Sabayon onto hard drive."
-msgstr "Instalando o Sabayon no disco rígido."
+msgid "Installing Rogentos onto hard drive."
+msgstr "Instalando o Rogentos no disco rígido."
 
 #: sabayon/livecd.py:128
-msgid "Configuring Sabayon"
-msgstr "Configurando o Sabayon"
+msgid "Configuring Rogentos"
+msgstr "Configurando o Rogentos"
 
 #: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
-msgstr "Sabayon completamente instalado "
+msgid "Rogentos configuration complete"
+msgstr "Rogentos completamente instalado "
 
 #: sabayon/utils.py:405
 msgid "Configuring System Services"

@@ -29,7 +29,7 @@ def matchStrInFile2(str,filename):
     fileTxt = file.read()
     replaced = fileTxt
     for x in str:
-        replaced = re.sub('(?P<o>\(".*?)('+x[0]+')(?P<t>.*?"\))','\g<o>'+x[1]+'\g<t>',replaced,0)
+        replaced = re.sub('(?P<o>".*?)('+x[0]+')(?P<t>.*?")','\g<o>'+x[1]+'\g<t>',replaced,0)
     file.close()
     file = open(filename,'w')
     file.write(replaced)
@@ -41,7 +41,7 @@ def globReplace(map,dirname):
     muie = glob.glob(dirname+"/*")
     for x in muie:
         if os.path.isdir(x) == False:
-            matchStrInFile(map,x)
+            matchStrInFile2(map,x)
     
     return
 

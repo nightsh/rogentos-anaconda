@@ -2967,7 +2967,7 @@ msgstr ""
 "Comprobando dependencias de los paquetes seleccionados para la instalación"
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
+msgid "Rogentos Core CD"
 msgstr ""
 
 #: installclasses/corecd.py:48
@@ -2978,7 +2978,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
+msgid "Rogentos Fluxbox"
 msgstr ""
 
 #: installclasses/fluxbox.py:47
@@ -2989,7 +2989,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
+msgid "Rogentos GNOME Desktop"
 msgstr ""
 
 #: installclasses/gnome.py:47
@@ -3000,7 +3000,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
+msgid "Rogentos KDE"
 msgstr ""
 
 #: installclasses/kde.py:47
@@ -9485,7 +9485,7 @@ msgstr ""
 # ../iw/silo_gui.py:28
 #: sabayon/livecd.py:108
 #, fuzzy
-msgid "Recovering Sabayon."
+msgid "Recovering Rogentos."
 msgstr "Configuración de VNC"
 
 # ../bootloader.py:656
@@ -9493,7 +9493,7 @@ msgstr "Configuración de VNC"
 # ../bootloader.py:710
 #: sabayon/livecd.py:114
 #, fuzzy
-msgid "Installing Sabayon onto hard drive."
+msgid "Installing Rogentos onto hard drive."
 msgstr "Instalación del gestor de arranque."
 
 # ../iw/silo_gui.py:28
@@ -9501,11 +9501,11 @@ msgstr "Instalación del gestor de arranque."
 # ../iw/silo_gui.py:28
 #: sabayon/livecd.py:128
 #, fuzzy
-msgid "Configuring Sabayon"
+msgid "Configuring Rogentos"
 msgstr "Configuración de VNC"
 
 #: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
+msgid "Rogentos configuration complete"
 msgstr ""
 
 #: sabayon/utils.py:405

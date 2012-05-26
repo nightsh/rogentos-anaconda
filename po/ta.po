@@ -2051,7 +2051,7 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "நிறுவலுக்கு தேர்ந்தெடுக்கப்பட்ட தொகுப்புகளின் சார்புகளை சோதிக்கிறது."
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
+msgid "Rogentos Core CD"
 msgstr ""
 
 #: installclasses/corecd.py:48
@@ -2062,7 +2062,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
+msgid "Rogentos Fluxbox"
 msgstr ""
 
 #: installclasses/fluxbox.py:47
@@ -2073,7 +2073,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
+msgid "Rogentos GNOME Desktop"
 msgstr ""
 
 #: installclasses/gnome.py:47
@@ -2084,7 +2084,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
+msgid "Rogentos KDE"
 msgstr ""
 
 #: installclasses/kde.py:47
@@ -6752,21 +6752,21 @@ msgstr "நிறுவல் மூலமாக பயன்படுத்த 
 
 #: sabayon/livecd.py:108
 #, fuzzy
-msgid "Recovering Sabayon."
+msgid "Recovering Rogentos."
 msgstr "VNC கட்டமைப்பு"
 
 #: sabayon/livecd.py:114
 #, fuzzy
-msgid "Installing Sabayon onto hard drive."
+msgid "Installing Rogentos onto hard drive."
 msgstr "Bootloaderஐ நிறுவுகிறது."
 
 #: sabayon/livecd.py:128
 #, fuzzy
-msgid "Configuring Sabayon"
+msgid "Configuring Rogentos"
 msgstr "VNC கட்டமைப்பு"
 
 #: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
+msgid "Rogentos configuration complete"
 msgstr ""
 
 #: sabayon/utils.py:405

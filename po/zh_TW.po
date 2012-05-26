@@ -1994,7 +1994,7 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "正在檢查欲安裝套件的相依性。"
 
 #: installclasses/corecd.py:38
-msgid "Sabayon Core CD"
+msgid "Rogentos Core CD"
 msgstr ""
 
 #: installclasses/corecd.py:48
@@ -2005,7 +2005,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/fluxbox.py:38
-msgid "Sabayon Fluxbox"
+msgid "Rogentos Fluxbox"
 msgstr ""
 
 #: installclasses/fluxbox.py:47
@@ -2016,7 +2016,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/gnome.py:45
-msgid "Sabayon GNOME Desktop"
+msgid "Rogentos GNOME Desktop"
 msgstr ""
 
 #: installclasses/gnome.py:47
@@ -2027,7 +2027,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/kde.py:38
-msgid "Sabayon KDE"
+msgid "Rogentos KDE"
 msgstr ""
 
 #: installclasses/kde.py:47
@@ -6594,21 +6594,21 @@ msgstr "提供的位置並非可使用來作為安裝來源的有效 %s live CD�
 
 #: sabayon/livecd.py:108
 #, fuzzy
-msgid "Recovering Sabayon."
+msgid "Recovering Rogentos."
 msgstr "VNC 設定"
 
 #: sabayon/livecd.py:114
 #, fuzzy
-msgid "Installing Sabayon onto hard drive."
+msgid "Installing Rogentos onto hard drive."
 msgstr "正在安裝開機管理程式。"
 
 #: sabayon/livecd.py:128
 #, fuzzy
-msgid "Configuring Sabayon"
+msgid "Configuring Rogentos"
 msgstr "VNC 設定"
 
 #: sabayon/livecd.py:158
-msgid "Sabayon configuration complete"
+msgid "Rogentos configuration complete"
 msgstr ""
 
 #: sabayon/utils.py:405
