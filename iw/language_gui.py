@@ -135,8 +135,8 @@ class LanguageWindow (InstallWindow):
         mainBox.pack_start (hbox, False, False, 10)
         mainBox.pack_start (sw, True, True)
 
-        # Rogentos language packs options
-        # See Rogentos bug 2518
+        # Sabayon language packs options
+        # See Sabayon bug 2518
         self.fullLangSupport = anaconda.instLanguage.fullLanguageSupport
         self.asianLangSupport = anaconda.instLanguage.asianLanguageSupport
 

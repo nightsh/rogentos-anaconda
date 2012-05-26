@@ -155,8 +155,8 @@ ui/zfcp-config.glade.h
 # lang-table
 lang-table.h
 
-# Rogentos stuff
-rogentos/const.py
-rogentos/__init__.py
-rogentos/livecd.py
-rogentos/utils.py
+# Sabayon stuff
+sabayon/const.py
+sabayon/__init__.py
+sabayon/livecd.py
+sabayon/utils.py

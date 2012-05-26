@@ -1,5 +1,5 @@
 #!/bin/sh
-ROGENTOS_VER=${ROGENTOS_VER:-6}
+SABAYON_VER=${SABAYON_VER:-6}
 rm -rf tmp
 mkdir tmp
 sh autogen.sh && \
@@ -16,11 +16,11 @@ if [[ ! -d "${pyanaconda_dir}" ]]; then
 	exit 1
 fi
 cd $(dirname "${pyanaconda_dir}")
-tar cjvf pyanaconda-${ROGENTOS_VER}.tar.bz2 "$(basename ${pyanaconda_dir})"
-md5sum pyanaconda-${ROGENTOS_VER}.tar.bz2 > pyanaconda-${ROGENTOS_VER}.tar.bz2.md5
-mv pyanaconda-${ROGENTOS_VER}.tar.bz2{,.md5} "${OLDPWD}"/
+tar cjvf pyanaconda-${SABAYON_VER}.tar.bz2 "$(basename ${pyanaconda_dir})"
+md5sum pyanaconda-${SABAYON_VER}.tar.bz2 > pyanaconda-${SABAYON_VER}.tar.bz2.md5
+mv pyanaconda-${SABAYON_VER}.tar.bz2{,.md5} "${OLDPWD}"/
 cd "${OLDPWD}"
 make distclean
 rm -rf tmp
 echo
-echo "Done cooking pyanaconda-${ROGENTOS_VER}.tar.bz2"
+echo "Done cooking pyanaconda-${SABAYON_VER}.tar.bz2"

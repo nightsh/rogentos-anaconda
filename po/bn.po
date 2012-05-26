@@ -177,7 +177,7 @@ msgstr ""
 #: textw/partition_text.py:186 textw/partition_text.py:192
 #: textw/partition_text.py:198 textw/partition_text.py:227
 #: textw/partition_text.py:273 textw/upgrade_text.py:181
-#: textw/upgrade_text.py:188 rogentos/livecd.py:476 rogentos/utils.py:1005
+#: textw/upgrade_text.py:188 sabayon/livecd.py:476 sabayon/utils.py:1005
 msgid "Error"
 msgstr "ত্রুটি"
 
@@ -209,7 +209,7 @@ msgstr ""
 #: yuminstall.py:930 yuminstall.py:1010 yuminstall.py:1016 yuminstall.py:1169
 #: yuminstall.py:1186 yuminstall.py:1239 yuminstall.py:1427 yuminstall.py:1446
 #: yuminstall.py:1469 storage/__init__.py:112 storage/__init__.py:219
-#: storage/__init__.py:1966 storage/dasd.py:139 rogentos/livecd.py:483
+#: storage/__init__.py:1966 storage/dasd.py:139 sabayon/livecd.py:483
 #, fuzzy
 msgid "_Exit installer"
 msgstr "%s ইনস্টলার"
@@ -491,7 +491,7 @@ msgstr "ইনস্টলার এখন বন্ধ করা হবে..."
 msgid "Exiting"
 msgstr "প্রস্থান"
 
-#: gui.py:1403 livecd.py:126 text.py:271 upgrade.py:228 rogentos/livecd.py:69
+#: gui.py:1403 livecd.py:126 text.py:271 upgrade.py:228 sabayon/livecd.py:69
 #, fuzzy
 msgid "Exit installer"
 msgstr "%s ইনস্টলার"
@@ -587,7 +587,7 @@ msgstr "পুনরায় বুট করুন (_R)"
 
 #: image.py:251 livecd.py:406 packages.py:332 upgrade.py:236 yuminstall.py:930
 #: yuminstall.py:1016 yuminstall.py:1427 yuminstall.py:1469 yuminstall.py:1487
-#: ui/anaconda.glade.h:2 rogentos/livecd.py:482
+#: ui/anaconda.glade.h:2 sabayon/livecd.py:482
 msgid "_Back"
 msgstr "পূর্ববর্তী (_B)"
 
@@ -815,7 +815,7 @@ msgid ""
 "%s"
 msgstr ""
 
-#: livecd.py:121 rogentos/livecd.py:64
+#: livecd.py:121 sabayon/livecd.py:64
 #, fuzzy
 msgid "Unable to find image"
 msgstr "ইনস্টল ইমেজ %s পাওয়া যায়নি"
@@ -858,7 +858,7 @@ msgid ""
 "minutes."
 msgstr "ইনস্টলেশন কর্ম আরম্ভ হচ্ছে।  এই কর্মে কয়েক মিনিট ব্যয় হতে পারে..."
 
-#: livecd.py:401 rogentos/livecd.py:477
+#: livecd.py:401 sabayon/livecd.py:477
 #, python-format
 msgid ""
 "The root filesystem you created is not large enough for this live image "
@@ -1376,13 +1376,13 @@ msgid "Do you want to start the network interfaces on this system?"
 msgstr "আপনি কি এই সিস্টেমের নেটওয়ার্ক ইন্টারফেস সক্রিয় করতে ইচ্ছুক?"
 
 #: rescue.py:242 loader/driverdisk.c:666 loader/driverdisk.c:676
-#: loader/hdinstall.c:206 textw/constants_text.py:56 rogentos/utils.py:928
-#: rogentos/utils.py:1172
+#: loader/hdinstall.c:206 textw/constants_text.py:56 sabayon/utils.py:928
+#: sabayon/utils.py:1172
 msgid "Yes"
 msgstr "হ্যাঁ"
 
 #: rescue.py:242 rescue.py:244 loader/driverdisk.c:666 loader/driverdisk.c:676
-#: textw/constants_text.py:60 rogentos/utils.py:928 rogentos/utils.py:1172
+#: textw/constants_text.py:60 sabayon/utils.py:928 sabayon/utils.py:1172
 msgid "No"
 msgstr "না"
 
@@ -2173,7 +2173,7 @@ msgid "Checking dependencies in packages selected for installation"
 msgstr "ইনস্টলেশনের জন্য নির্বাচিত প্যাকেজগুলির নির্ভরতা পরীক্ষা করা হচ্ছে..."
 
 #: installclasses/corecd.py:38
-msgid "Rogentos Core CD"
+msgid "Sabayon Core CD"
 msgstr ""
 
 #: installclasses/corecd.py:48
@@ -2184,7 +2184,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/fluxbox.py:38
-msgid "Rogentos Fluxbox"
+msgid "Sabayon Fluxbox"
 msgstr ""
 
 #: installclasses/fluxbox.py:47
@@ -2195,7 +2195,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/gnome.py:45
-msgid "Rogentos GNOME Desktop"
+msgid "Sabayon GNOME Desktop"
 msgstr ""
 
 #: installclasses/gnome.py:47
@@ -2206,7 +2206,7 @@ msgid ""
 msgstr ""
 
 #: installclasses/kde.py:38
-msgid "Rogentos KDE"
+msgid "Sabayon KDE"
 msgstr ""
 
 #: installclasses/kde.py:47
@@ -7076,141 +7076,141 @@ msgstr "ওয়েলশ"
 msgid "Zulu"
 msgstr "জুলু"
 
-#: rogentos/livecd.py:65
+#: sabayon/livecd.py:65
 #, python-format
 msgid ""
 "The given location [%s] isn't a valid %s live CD to use as an installation "
 "source."
 msgstr ""
 
-#: rogentos/livecd.py:108
+#: sabayon/livecd.py:108
 #, fuzzy
-msgid "Recovering Rogentos."
+msgid "Recovering Sabayon."
 msgstr "VNC কনফিগারেশন পদ্ধতি"
 
-#: rogentos/livecd.py:114
+#: sabayon/livecd.py:114
 #, fuzzy
-msgid "Installing Rogentos onto hard drive."
+msgid "Installing Sabayon onto hard drive."
 msgstr "বুট-লোডার ইনস্টল করা হচ্ছে..."
 
-#: rogentos/livecd.py:128
+#: sabayon/livecd.py:128
 #, fuzzy
-msgid "Configuring Rogentos"
+msgid "Configuring Sabayon"
 msgstr "VNC কনফিগারেশন পদ্ধতি"
 
-#: rogentos/livecd.py:158
-msgid "Rogentos configuration complete"
+#: sabayon/livecd.py:158
+msgid "Sabayon configuration complete"
 msgstr ""
 
-#: rogentos/utils.py:405
+#: sabayon/utils.py:405
 #, fuzzy
 msgid "Configuring System Services"
 msgstr "নেটওয়ার্ক ইন্টারফেস কনফিগার"
 
-#: rogentos/utils.py:684
+#: sabayon/utils.py:684
 msgid "An issue occured while installing"
 msgstr ""
 
-#: rogentos/utils.py:686
+#: sabayon/utils.py:686
 msgid "Meh."
 msgstr ""
 
-#: rogentos/utils.py:687
+#: sabayon/utils.py:687
 #, fuzzy
 msgid "Drivers installation issue"
 msgstr "ইনস্টলেশন কর্মের প্রগতি"
 
-#: rogentos/utils.py:716
+#: sabayon/utils.py:716
 #, fuzzy
 msgid "System Installation"
 msgstr "ইনস্টলেশনোত্তর ব্যবস্থাপনা"
 
-#: rogentos/utils.py:848
+#: sabayon/utils.py:848
 #, fuzzy
 msgid "Cleaning packages"
 msgstr "পুরোনো প্যাকেজ"
 
-#: rogentos/utils.py:873
+#: sabayon/utils.py:873
 #, fuzzy
 msgid "Cleaning package"
 msgstr "অনুপস্থিত প্যাকেজ"
 
-#: rogentos/utils.py:917
+#: sabayon/utils.py:917
 #, fuzzy
 msgid "Installation complete"
 msgstr "ইনস্টলেশন-কি"
 
-#: rogentos/utils.py:925
+#: sabayon/utils.py:925
 msgid ""
 "The following language packs are available for download (you need Internet), "
 "would you like to install them?"
 msgstr ""
 
-#: rogentos/utils.py:929
+#: sabayon/utils.py:929
 #, fuzzy
 msgid "Language packs download"
 msgstr "প্যাকেজ ইনস্টলেশন"
 
-#: rogentos/utils.py:950
+#: sabayon/utils.py:950
 msgid "No language packs are available for download, sorry!"
 msgstr ""
 
-#: rogentos/utils.py:951 rogentos/utils.py:961
+#: sabayon/utils.py:951 sabayon/utils.py:961
 #, fuzzy
 msgid "Language packs"
 msgstr "প্যাকেজ ইনস্টলেশন"
 
-#: rogentos/utils.py:960
+#: sabayon/utils.py:960
 msgid "No language packs are available for install, sorry!"
 msgstr ""
 
-#: rogentos/utils.py:970
+#: sabayon/utils.py:970
 #, fuzzy
 msgid "Downloading package"
 msgstr "অনুপস্থিত প্যাকেজ"
 
-#: rogentos/utils.py:979
+#: sabayon/utils.py:979
 #, fuzzy
 msgid "Installing package"
 msgstr "প্যাকেজ ইনস্টল করা হচ্ছে"
 
-#: rogentos/utils.py:996 rogentos/utils.py:1006
+#: sabayon/utils.py:996 sabayon/utils.py:1006
 msgid "Reordering Entropy mirrors"
 msgstr ""
 
-#: rogentos/utils.py:996
+#: sabayon/utils.py:996
 msgid "can take some time..."
 msgstr ""
 
-#: rogentos/utils.py:1034
+#: sabayon/utils.py:1034
 msgid "No repositories specified in"
 msgstr ""
 
-#: rogentos/utils.py:1036 rogentos/utils.py:1041 rogentos/utils.py:1048
+#: sabayon/utils.py:1036 sabayon/utils.py:1041 sabayon/utils.py:1048
 msgid "Repositories update"
 msgstr ""
 
-#: rogentos/utils.py:1040
+#: sabayon/utils.py:1040
 msgid "Unhandled exception"
 msgstr ""
 
-#: rogentos/utils.py:1047
+#: sabayon/utils.py:1047
 msgid "Cannot download repositories right now, no big deal"
 msgstr ""
 
-#: rogentos/utils.py:1170
+#: sabayon/utils.py:1170
 #, fuzzy
 msgid ""
 "This medium contains many extra languages, would you like to keep them "
 "installed?"
 msgstr "ইনস্টলেশন চলাকালে আপনি কোন ভাষা ব্যবহার করতে ইচ্ছুক?"
 
-#: rogentos/utils.py:1173
+#: sabayon/utils.py:1173
 #, fuzzy
 msgid "Language packs installation"
 msgstr "প্যাকেজ ইনস্টলেশন"
 
-#: rogentos/utils.py:1184
+#: sabayon/utils.py:1184
 msgid "Generating list of files to copy"
 msgstr ""
 

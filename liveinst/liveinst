@@ -34,12 +34,12 @@ for arg in $*; do
 done
 [[ -z "${DISPLAY}" ]] && DO_TEXT="1"
 
-export ANACONDA_PRODUCTNAME="Rogentos"
-export ANACONDA_PRODUCTVERSION="$(cat /etc/rogentos-release | cut -d' ' -f 4)"
+export ANACONDA_PRODUCTNAME="Sabayon"
+export ANACONDA_PRODUCTVERSION="$(cat /etc/sabayon-release | cut -d' ' -f 4)"
 export ANACONDA_PRODUCTPATH="/mnt/livecd"
 export ANACONDA_CHROOTPATH="/mnt/sysimage"
-export ANACONDA_PRODUCTARCH="$(cat /etc/rogentos-release | cut -d' ' -f 3)"
-export ANACONDA_BUGURL="http://bugs.rogentos.org"
+export ANACONDA_PRODUCTARCH="$(cat /etc/sabayon-release | cut -d' ' -f 3)"
+export ANACONDA_BUGURL="http://bugs.sabayon.org"
 export PIXMAPPATH="/usr/share/anaconda/pixmaps"
 
 function kill_mounts() {
@@ -103,7 +103,7 @@ setup_vbox
 
 /sbin/udevadm control --env=ANACONDA=1
 
-if [ -x /usr/bin/udisks ] && [ -z "${ROGENTOS_DEBUG}" ]; then
+if [ -x /usr/bin/udisks ] && [ -z "${SABAYON_DEBUG}" ]; then
     /usr/bin/udisks --inhibit -- $ANACONDA $*
 else
     $ANACONDA $*

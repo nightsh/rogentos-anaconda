@@ -55,8 +55,8 @@ class NetworkWindow(InstallWindow):
 
         self.firewallCb = self.xml.get_widget("firewall_check")
         self.firewallCb.set_active(self.anaconda.network.useFirewall)
-        from rogentos import Entropy
-        from rogentos.const import FIREWALL_PACKAGE
+        from sabayon import Entropy
+        from sabayon.const import FIREWALL_PACKAGE
         if not Entropy().is_installed(FIREWALL_PACKAGE):
             self.firewallCb.set_visible(False)
 

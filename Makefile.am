@@ -20,7 +20,7 @@
 ACLOCAL_AMFLAGS = -I m4
 
 SUBDIRS = isys po booty storage textw utils scripts bootdisk \
-          installclasses rogentos iw command-stubs ui docs pixmaps tests fonts \
+          installclasses sabayon iw command-stubs ui docs pixmaps tests fonts \
           gptsync liveinst
 
 EXTRA_DIST = config.rpath COPYING pychecker-false-positives \
@@ -58,7 +58,7 @@ xutils_la_SOURCES     = xutils.c
 anacondadir     = $(pkgpyexecdir)
 anaconda_PYTHON = *.py
 
-PYCHECKERPATH = isys:textw:iw:installclasses:rogentos:/usr/share/system-config-date
+PYCHECKERPATH = isys:textw:iw:installclasses:sabayon:/usr/share/system-config-date
 PYCHECKEROPTS = -F pycheckrc-for-anaconda
 ARCHIVE_TAG   = $(PACKAGE_NAME)-$(PACKAGE_VERSION)-$(PACKAGE_RELEASE)
 
@@ -98,7 +98,7 @@ src: archive
 	@rm -f $(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2
 
 pycheck:
-	PYTHONPATH=$(PYCHECKERPATH) pychecker $(PYCHECKEROPTS) *.py textw/*.py iw/*.py installclasses/*.py rogentos/*.py storage/*.py | grep -v "__init__() not called"
+	PYTHONPATH=$(PYCHECKERPATH) pychecker $(PYCHECKEROPTS) *.py textw/*.py iw/*.py installclasses/*.py sabayon/*.py storage/*.py | grep -v "__init__() not called"
 
 pycheck-file:
 	PYTHONPATH=.:$(PYCHECKERPATH) pychecker $(PYCHECKEROPTS) $(CHECK) | grep -v "__init__() not called"

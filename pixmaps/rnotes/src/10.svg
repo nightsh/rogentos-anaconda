@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.48.1 r9760"
    sodipodi:docname="10.svg"
-   inkscape:export-filename="/home/fabio/repos/anaconda-rogentos/pixmaps/rnotes/rnote.png"
+   inkscape:export-filename="/home/fabio/repos/anaconda-sabayon/pixmaps/rnotes/rnote.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -237,7 +237,7 @@
          id="tspan6249"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:146.00000381%;word-spacing:0.05px;font-family:Cantarell;-inkscape-font-specification:Cantarell">Thanks for installing <tspan
    style="font-size:52px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Asenine;-inkscape-font-specification:Asenine Bold"
-   id="tspan7301">rogentos</tspan>,</tspan><tspan
+   id="tspan7301">sabayon</tspan>,</tspan><tspan
          sodipodi:role="line"
          x="49.497475"
          y="807.19519"
@@ -261,6 +261,6 @@
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:146.00000381%;word-spacing:0.05px;font-family:Cantarell;-inkscape-font-specification:Cantarell"
          id="tspan7311"><tspan
            style="font-weight:bold;-inkscape-font-specification:Cantarell Bold"
-           id="tspan7313">                      rogentos.org/donate</tspan></tspan></text>
+           id="tspan7313">                      sabayon.org/donate</tspan></tspan></text>
   </g>
 </svg>
