@@ -35,7 +35,7 @@ from sabayon.livecd import LiveCDCopyBackend
 class InstallClass(BaseInstallClass):
 
     id = "sabayon_corecd"
-    name = N_("Sabayon Core")
+    name = N_("Rogentos Core")
 
     _pixmap_dirs = os.getenv("PIXMAPPATH", "/usr/share/pixmaps").split(":")
     for _pix_dir in _pixmap_dirs:

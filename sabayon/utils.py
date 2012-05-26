@@ -403,7 +403,7 @@ class SabayonInstall:
             os.remove(installer_desk)
 
         # install welcome loader
-        orig_welcome_desk = self._root+"/etc/sabayon/sabayon-welcome-loader.desktop"
+        orig_welcome_desk = self._root+"/etc/rogentos/rogentos-welcome-loader.desktop"
         if os.path.isfile(orig_welcome_desk):
             autostart_dir = self._root+"/etc/skel/.config/autostart"
             if not os.path.isdir(autostart_dir):
@@ -448,7 +448,7 @@ class SabayonInstall:
             rc-update del music boot default
             rm -f /etc/init.d/music
             rc-update del sabayonlive boot default
-            rm -f /etc/init.d/sabayonlive
+            rm -f /etc/init.d/rogentoslive
             rc-update add vixie-cron default
             if [ ! -e "/etc/init.d/net.eth0" ]; then
                 cd /etc/init.d && ln -s net.lo net.eth0
@@ -670,7 +670,7 @@ class SabayonInstall:
         if os.path.isfile(sudoers_file):
             self.spawn("sed -i '/NOPASSWD/ s/^/#/' %s" % (sudoers_file,))
             with open(sudoers_file, "a") as sudo_f:
-                sudo_f.write("\n#Added by Sabayon Installer\n%wheel  ALL=ALL\n")
+                sudo_f.write("\n#Added by Rogentos Installer\n%wheel  ALL=ALL\n")
                 sudo_f.flush()
 
     def setup_audio(self):
@@ -826,12 +826,12 @@ class SabayonInstall:
                 "etc/entropy/packages/package.unmask")
             if os.access(mask_file, os.W_OK) and os.path.isfile(mask_file):
                 f = open(mask_file,"aw")
-                f.write("\n# added by Sabayon Installer\nx11-drivers/nvidia-drivers\n")
+                f.write("\n# added by Rogentos Installer\nx11-drivers/nvidia-drivers\n")
                 f.flush()
                 f.close()
             if os.access(unmask_file, os.W_OK) and os.path.isfile(unmask_file):
                 f = open(unmask_file,"aw")
-                f.write("\n# added by Sabayon Installer\n%s\n" % (
+                f.write("\n# added by Rogentos Installer\n%s\n" % (
                     legacy_unmask_map[nv_ver],))
                 f.flush()
                 f.close()
@@ -883,7 +883,7 @@ class SabayonInstall:
         This function copy the LiveCD/DVD content into self._root
         """
 
-        if not os.getenv("SABAYON_DISABLE_PKG_REMOVAL"):
+        if not os.getenv("ROGENTOS_DISABLE_PKG_REMOVAL"):
             self._setup_packages_to_remove()
 
         action = _("System Installation")

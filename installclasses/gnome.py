@@ -42,7 +42,7 @@ class InstallClass(BaseInstallClass):
         if os.path.isfile(_pix_path):
             pixmap = _pix_path
 
-    name = N_("Sabayon GNOME Desktop")
+    name = N_("Rogentos GNOME Desktop")
     dmrc = "gnome"
     _description = N_("Select this installation type for a default installation "
                      "with the GNOME desktop environment. "
