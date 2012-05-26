@@ -85,7 +85,7 @@
        y1="450"
        x1="0"
        spreadMethod="repeat"
-       gradientTransform="matrix(0.66666667,0,0,1,-141.42135,358.43328)"
+       gradientTransform="matrix(0.66666667,0,0,1,-75.761435,476.62113)"
        gradientUnits="userSpaceOnUse"
        id="linearGradient6212"
        xlink:href="#linearGradient3741"
@@ -104,10 +104,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="997"
+     inkscape:window-width="1920"
+     inkscape:window-height="987"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="29"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -117,7 +117,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -136,10 +136,10 @@
     <rect
        width="960"
        height="900"
-       x="-141.42136"
-       y="358.43329"
+       x="-75.761444"
+       y="476.62115"
        id="rect3739"
-       style="opacity:0.02;fill:url(#linearGradient6212);fill-opacity:1;stroke:none;display:inline" />
+       style="opacity:0.02000002;fill:url(#linearGradient6212);fill-opacity:1;stroke:none;display:inline" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#343434;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -259,5 +259,23 @@
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:190.99999666%;word-spacing:0.05px;font-family:Cantarell;-inkscape-font-specification:Cantarell">▢ <tspan
    style="font-weight:bold;-inkscape-font-specification:Cantarell Bold"
    id="tspan7255">Lists</tspan>: lists.sabayon.org</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="fill:#ff00ff"
+       id="path4944"
+       sodipodi:sides="5"
+       sodipodi:cx="160.61426"
+       sodipodi:cy="94.426303"
+       sodipodi:r1="232.96667"
+       sodipodi:r2="116.48334"
+       sodipodi:arg1="0.75473293"
+       sodipodi:arg2="1.3830515"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 330.31989,254.0304 182.35515,208.86275 61.263658,305.14633 58.497032,150.46593 -70.493421,65.054334 75.761445,14.624244 117.13246,-134.4466 210.28956,-10.933712 364.84871,-17.652966 276.1681,109.11229 z"
+       transform="translate(0,602.36218)"
+       inkscape:transform-center-x="13.436615"
+       inkscape:transform-center-y="-9.0764366" />
   </g>
 </svg>

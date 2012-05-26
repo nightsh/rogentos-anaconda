@@ -99,15 +99,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="306.36389"
+     inkscape:cx="308.3842"
      inkscape:cy="143.7561"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="997"
+     inkscape:window-width="1920"
+     inkscape:window-height="987"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="29"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -259,5 +259,29 @@
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:190.99999666%;word-spacing:0.05px;font-family:Cantarell;-inkscape-font-specification:Cantarell">▢ <tspan
    style="font-weight:bold;-inkscape-font-specification:Cantarell Bold"
    id="tspan6969">Bleeding</tspan>: Enlightenment 17</tspan></text>
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3150"
+       width="164.65486"
+       height="125.25892"
+       x="104.04572"
+       y="97.456764"
+       transform="translate(0,602.36218)" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3152"
+       width="116.16754"
+       height="149.50258"
+       x="435.37576"
+       y="138.87302"
+       transform="translate(0,602.36218)" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3154"
+       width="68.690376"
+       height="35.355339"
+       x="251.52798"
+       y="338.88321"
+       transform="translate(0,602.36218)" />
   </g>
 </svg>

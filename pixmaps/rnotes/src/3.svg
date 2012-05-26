@@ -104,10 +104,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="997"
+     inkscape:window-width="1920"
+     inkscape:window-height="987"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="29"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -117,7 +117,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -251,5 +251,45 @@
          y="977.82306"
          id="tspan6249"
          style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:190.99999666%;word-spacing:0.05px;font-family:Cantarell;-inkscape-font-specification:Cantarell">▢ 400+ Games, updated weekly</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3470"
+       sodipodi:cx="191.4239"
+       sodipodi:cy="207.56339"
+       sodipodi:rx="11.616755"
+       sodipodi:ry="22.223356"
+       d="m 203.04066,207.56339 a 11.616755,22.223356 0 1 1 -23.23351,0 11.616755,22.223356 0 1 1 23.23351,0 z"
+       transform="translate(0,602.36218)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3472"
+       sodipodi:cx="429.81992"
+       sodipodi:cy="197.46187"
+       sodipodi:rx="37.880722"
+       sodipodi:ry="36.36549"
+       d="m 467.70064,197.46187 a 37.880722,36.36549 0 1 1 -75.76145,0 37.880722,36.36549 0 1 1 75.76145,0 z"
+       transform="translate(0,602.36218)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3474"
+       sodipodi:cx="306.5813"
+       sodipodi:cy="331.81216"
+       sodipodi:rx="45.961941"
+       sodipodi:ry="58.588848"
+       d="m 352.54324,331.81216 a 45.961941,58.588848 0 1 1 -91.92388,0 45.961941,58.588848 0 1 1 91.92388,0 z"
+       transform="translate(0,602.36218)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3476"
+       sodipodi:cx="308.09653"
+       sodipodi:cy="95.941528"
+       sodipodi:rx="45.456863"
+       sodipodi:ry="35.860416"
+       d="m 353.55339,95.941528 a 45.456863,35.860416 0 1 1 -90.91373,0 45.456863,35.860416 0 1 1 90.91373,0 z"
+       transform="translate(0,602.36218)" />
   </g>
 </svg>
