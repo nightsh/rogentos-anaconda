@@ -223,12 +223,12 @@ app-i18n/man-pages-ru
 app-i18n/man-pages-zh_CN
 """
 
-# See Sabayon bug 2518
+# See Rogentos bug 2518
 ASIAN_FONTS_PACKAGES = ["@ime-fonts-support", "@ime-fonts"]
 
-# See Sabayon bug 2661
+# See Rogentos bug 2661
 FIREWALL_PACKAGE = "net-firewall/ufw"
 FIREWALL_SERVICE = "ufw"
 
-LIVE_USER = "sabayonuser"
-REPO_NAME = "sabayonlinux.org"
+LIVE_USER = "rogentosuser"
+REPO_NAME = "rogentoslinux.org"

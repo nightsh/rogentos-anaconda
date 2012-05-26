@@ -40,8 +40,8 @@ import isys
 import iutil
 import logging
 from anaconda_log import PROGRAM_LOG_FILE
-import sabayon.utils
-from sabayon import Entropy
+import rogentos.utils
+from rogentos import Entropy
 
 # Entropy imports
 from entropy.const import etpConst, const_kill_threads
@@ -90,11 +90,11 @@ class LiveCDCopyBackend(backend.AnacondaBackend):
             return
 
     def doPreInstall(self, anaconda):
-        self._progress = sabayon.utils.SabayonProgress(anaconda)
+        self._progress = rogentos.utils.RogentosProgress(anaconda)
         self._progress.start()
         self._entropy = Entropy()
         self._entropy.connect_progress(self._progress)
-        self._sabayon_install = sabayon.utils.SabayonInstall(anaconda)
+        self._rogentos_install = rogentos.utils.RogentosInstall(anaconda)
         # We use anaconda.upgrade as bootloader recovery step
         self._bootloader_recovery = anaconda.upgrade
         self._install_grub = not self.anaconda.dispatch.stepInSkipList("instbootloader")
@@ -105,49 +105,49 @@ class LiveCDCopyBackend(backend.AnacondaBackend):
         anaconda.dispatch.skipStep("instbootloader", skip = 1)
 
         if self._bootloader_recovery:
-            log.info("Preparing to recover Sabayon")
-            self._progress.set_label(_("Recovering Sabayon."))
+            log.info("Preparing to recover Rogentos")
+            self._progress.set_label(_("Recovering Rogentos."))
             self._progress.set_fraction(0.0)
             return
         else:
-            log.info("Preparing to install Sabayon")
+            log.info("Preparing to install Rogentos")
 
-        self._progress.set_label(_("Installing Sabayon onto hard drive."))
+        self._progress.set_label(_("Installing Rogentos onto hard drive."))
         self._progress.set_fraction(0.0)
 
         # Actually install
-        self._sabayon_install.live_install()
-        self._sabayon_install.setup_users()
-        self._sabayon_install.setup_language() # before ldconfig, thx
+        self._rogentos_install.live_install()
+        self._rogentos_install.setup_users()
+        self._rogentos_install.setup_language() # before ldconfig, thx
         # if simple networking is enabled, disable NetworkManager
         if self.anaconda.instClass.simplenet:
-            self._sabayon_install.setup_manual_networking()
+            self._rogentos_install.setup_manual_networking()
         else:
-            self._sabayon_install.setup_networkmanager_networking()
-        self._sabayon_install.setup_keyboard()
+            self._rogentos_install.setup_networkmanager_networking()
+        self._rogentos_install.setup_keyboard()
 
-        action = _("Configuring Sabayon")
+        action = _("Configuring Rogentos")
         self._progress.set_label(action)
         self._progress.set_fraction(0.7)
 
-        self._sabayon_install.setup_sudo()
-        self._sabayon_install.setup_audio()
-        self._sabayon_install.setup_xorg()
-        self._sabayon_install.remove_proprietary_drivers()
+        self._rogentos_install.setup_sudo()
+        self._rogentos_install.setup_audio()
+        self._rogentos_install.setup_xorg()
+        self._rogentos_install.remove_proprietary_drivers()
         try:
-            self._sabayon_install.setup_nvidia_legacy()
+            self._rogentos_install.setup_nvidia_legacy()
         except Exception as e:
             # caused by Entropy bug <0.99.47.2, remove in future
             log.error("Unable to install legacy nvidia drivers: %s" % e)
 
         self._progress.set_fraction(0.8)
-        self._sabayon_install.configure_services()
-        self._sabayon_install.copy_udev()
-        self._sabayon_install.env_update()
-        self._sabayon_install.spawn_chroot("locale-gen", silent = True)
-        self._sabayon_install.spawn_chroot("ldconfig")
+        self._rogentos_install.configure_services()
+        self._rogentos_install.copy_udev()
+        self._rogentos_install.env_update()
+        self._rogentos_install.spawn_chroot("locale-gen", silent = True)
+        self._rogentos_install.spawn_chroot("ldconfig")
         # Fix a possible /tmp problem
-        self._sabayon_install.spawn("chmod a+w "+self._root+"/tmp")
+        self._rogentos_install.spawn("chmod a+w "+self._root+"/tmp")
         var_tmp = self._root + "/var/tmp"
         if not os.path.isdir(var_tmp): # wtf!
             os.makedirs(var_tmp)
@@ -156,21 +156,21 @@ class LiveCDCopyBackend(backend.AnacondaBackend):
             with open(var_tmp_keep, "w") as wt:
                 wt.flush()
 
-        action = _("Sabayon configuration complete")
+        action = _("Rogentos configuration complete")
         self._progress.set_label(action)
 
     def doPostInstall(self, anaconda):
 
         if not self._bootloader_recovery:
-            self._sabayon_install.setup_entropy_mirrors()
-            self._sabayon_install.language_packs_install()
+            self._rogentos_install.setup_entropy_mirrors()
+            self._rogentos_install.language_packs_install()
 
         self._progress.set_fraction(1.0)
 
-        self._sabayon_install.emit_install_done()
+        self._rogentos_install.emit_install_done()
         storage.writeEscrowPackets(anaconda)
 
-        self._sabayon_install.destroy()
+        self._rogentos_install.destroy()
         if hasattr(self._entropy, "shutdown"):
             self._entropy.shutdown()
         else:
@@ -307,7 +307,7 @@ class LiveCDCopyBackend(backend.AnacondaBackend):
             'us': 'us',
         }
         console_kbd, xxx, aaa, yyy, zzz = \
-            self._sabayon_install.get_keyboard_layout()
+            self._rogentos_install.get_keyboard_layout()
         gk_kbd = keymaps_map.get(console_kbd)
 
         # look for kernel arguments we know should be preserved and add them
@@ -316,15 +316,15 @@ class LiveCDCopyBackend(backend.AnacondaBackend):
             "pci=routeirq", "irqpoll", "nohdparm", "pci=", "floppy.floppy=",
             "all-generic-ide", "gentoo=", "res=", "hsync=", "refresh=", "noddc",
             "xdriver=", "onlyvesa", "nvidia=", "dodmraid", "dmraid",
-            "sabayonmce", "quiet", "scandelay=", "doslowusb", "docrypt",
+            "rogentosmce", "quiet", "scandelay=", "doslowusb", "docrypt",
             "dokeymap", "keymap=", "radeon.modeset=", "modeset=", "nomodeset",
             "domdadm"]
 
-        # Sabayon MCE install -> MCE support
+        # Rogentos MCE install -> MCE support
         # use reference, yeah
-        cmdline = self._sabayon_install.cmdline
-        if Entropy.is_sabayon_mce() and ("sabayonmce" not in cmdline):
-            cmdline.append("sabayonmce")
+        cmdline = self._rogentos_install.cmdline
+        if Entropy.is_rogentos_mce() and ("rogentosmce" not in cmdline):
+            cmdline.append("rogentosmce")
 
         # Setup genkernel (init) keyboard layout
         if gk_kbd is not None:
@@ -541,12 +541,12 @@ class LiveCDCopyBackend(backend.AnacondaBackend):
         #cmdline = ' '.join([x for x in cmdline.split() if \
         #    not x.startswith("vga=")])
 
-        # Since Sabayon 5.4, we also write to /etc/default/sabayon-grub
-        grub_sabayon_file = self._root + "/etc/default/sabayon-grub"
-        grub_sabayon_dir = os.path.dirname(grub_sabayon_file)
-        if not os.path.isdir(grub_sabayon_dir):
-            os.makedirs(grub_sabayon_dir)
-        with open(grub_sabayon_file, "w") as f_w:
+        # Since Rogentos 5.4, we also write to /etc/default/rogentos-grub
+        grub_rogentos_file = self._root + "/etc/default/rogentos-grub"
+        grub_rogentos_dir = os.path.dirname(grub_rogentos_file)
+        if not os.path.isdir(grub_rogentos_dir):
+            os.makedirs(grub_rogentos_dir)
+        with open(grub_rogentos_file, "w") as f_w:
             f_w.write("# this file has been added by the Anaconda Installer\n")
             f_w.write("# containing default installer bootloader arguments.\n")
             f_w.write("# DO NOT EDIT NOR REMOVE THIS FILE DIRECTLY !!!\n")

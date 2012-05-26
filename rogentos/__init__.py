@@ -1,5 +1,5 @@
 #
-# sabayon.py: Sabayon Linux Anaconda install method backend
+# rogentos.py: Rogentos Linux Anaconda install method backend
 #
 #
 # Copyright (C) 2010 Fabio Erculiani
@@ -76,10 +76,10 @@ class Entropy(Client):
         return False
 
     @staticmethod
-    def is_sabayon_mce():
+    def is_rogentos_mce():
         with open("/proc/cmdline", "r") as cmd_f:
             args = cmd_f.readline().strip().split()
-            for tstr in ("mceinstall", "sabayonmce"):
+            for tstr in ("mceinstall", "rogentosmce"):
                 if tstr in args:
                     return True
             return False

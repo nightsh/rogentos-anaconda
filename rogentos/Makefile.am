@@ -1,4 +1,4 @@
-# sabayon/Makefile.am for anaconda
+# rogentos/Makefile.am for anaconda
 #
 # Copyright (C) 2009  Red Hat, Inc.
 #
@@ -15,9 +15,9 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Author: Fabio Erculiani <lxnay@sabayon.org>
+# Author: Fabio Erculiani <lxnay@rogentos.org>
 
-sabayondir = $(pyexecdir)/py$(PACKAGE_NAME)/sabayon
-sabayon_PYTHON = *.py
+rogentosdir = $(pyexecdir)/py$(PACKAGE_NAME)/rogentos
+rogentos_PYTHON = *.py
 
 MAINTAINERCLEANFILES = Makefile.in

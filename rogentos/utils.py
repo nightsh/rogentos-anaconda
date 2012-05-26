@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# sabayon/utils.py
+# rogentos/utils.py
 #
 # Copyright (C) 2010 Fabio Erculiani
 #
@@ -49,8 +49,8 @@ from entropy.services.client import WebService
 # Anaconda imports
 import logging
 from constants import productPath
-from sabayon import Entropy
-from sabayon.const import LIVE_USER, LANGUAGE_PACKS, REPO_NAME, \
+from rogentos import Entropy
+from rogentos.const import LIVE_USER, LANGUAGE_PACKS, REPO_NAME, \
     ASIAN_FONTS_PACKAGES, FIREWALL_SERVICE
 
 import gettext
@@ -59,7 +59,7 @@ _ = lambda x: gettext.ldgettext("anaconda", x)
 STDERR_LOG = open("/tmp/anaconda.log","aw")
 log = logging.getLogger("anaconda")
 
-class SabayonProgress(Singleton):
+class RogentosProgress(Singleton):
 
     def init_singleton(self, anaconda):
         self._intf = anaconda.intf
@@ -177,7 +177,7 @@ class SabayonProgress(Singleton):
         self._prog.adbox.show_all()
 
 
-class SabayonInstall:
+class RogentosInstall:
 
     def __init__(self, anaconda):
 
@@ -185,7 +185,7 @@ class SabayonInstall:
         self._root = anaconda.rootPath
         self._prod_root = productPath
         self._intf = anaconda.intf
-        self._progress = SabayonProgress(anaconda)
+        self._progress = RogentosProgress(anaconda)
         self._entropy = Entropy()
         self._settings = SystemSettings()
         with open("/proc/cmdline", "r") as cmd_f:
@@ -280,7 +280,7 @@ class SabayonInstall:
 
     def install_package(self, atom, match = None, silent = False, fetch = False):
 
-        if silent and os.getenv('SABAYON_DEBUG'):
+        if silent and os.getenv('ROGENTOS_DEBUG'):
             silent = False
 
         chroot = self._root
@@ -317,7 +317,7 @@ class SabayonInstall:
 
     def remove_package(self, atom, match = None, silent = False):
 
-        if silent and os.getenv('SABAYON_DEBUG'):
+        if silent and os.getenv('ROGENTOS_DEBUG'):
             silent = False
 
         chroot = self._root
@@ -403,7 +403,7 @@ class SabayonInstall:
             os.remove(installer_desk)
 
         # install welcome loader
-        orig_welcome_desk = self._root+"/etc/sabayon/sabayon-welcome-loader.desktop"
+        orig_welcome_desk = self._root+"/etc/rogentos/rogentos-welcome-loader.desktop"
         if os.path.isfile(orig_welcome_desk):
             autostart_dir = self._root+"/etc/skel/.config/autostart"
             if not os.path.isdir(autostart_dir):
@@ -435,9 +435,9 @@ class SabayonInstall:
         action = _("Configuring System Services")
         self._progress.set_text(action)
 
-        is_sabayon_mce = "1"
-        if not Entropy.is_sabayon_mce():
-            is_sabayon_mce = "0"
+        is_rogentos_mce = "1"
+        if not Entropy.is_rogentos_mce():
+            is_rogentos_mce = "0"
 
         # Remove Installer services
         config_script = """
@@ -447,8 +447,8 @@ class SabayonInstall:
             rm -f /etc/init.d/installer-text
             rc-update del music boot default
             rm -f /etc/init.d/music
-            rc-update del sabayonlive boot default
-            rm -f /etc/init.d/sabayonlive
+            rc-update del rogentoslive boot default
+            rm -f /etc/init.d/rogentoslive
             rc-update add vixie-cron default
             if [ ! -e "/etc/init.d/net.eth0" ]; then
                 cd /etc/init.d && ln -s net.lo net.eth0
@@ -465,9 +465,9 @@ class SabayonInstall:
             if [ -e "/etc/init.d/oemsystem-default" ]; then
                 rc-update add oemsystem-default default
             fi
-            if [ "0" = """+is_sabayon_mce+""" ]; then
-                rc-update del sabayon-mce boot
-                rc-update del sabayon-mce default
+            if [ "0" = """+is_rogentos_mce+""" ]; then
+                rc-update del rogentos-mce boot
+                rc-update del rogentos-mce default
             fi
             if [ -e "/etc/init.d/dmcrypt" ]; then
                 rc-update add dmcrypt boot
@@ -504,7 +504,7 @@ class SabayonInstall:
         # This workaround will be dropped ASAP (it's shit and uses spawn()
         # for no particular reason -- doesn't check exit status, etc...)
         # Who cares, it will be killed very soon!
-        glib_schema = "/usr/share/glib-2.0/schemas/org.sabayon-fglrx.gschema.override"
+        glib_schema = "/usr/share/glib-2.0/schemas/org.rogentos-fglrx.gschema.override"
         if os.path.isfile(glib_schema):
             self.spawn(
                 "cp -p %s %s%s" % (
@@ -670,7 +670,7 @@ class SabayonInstall:
         if os.path.isfile(sudoers_file):
             self.spawn("sed -i '/NOPASSWD/ s/^/#/' %s" % (sudoers_file,))
             with open(sudoers_file, "a") as sudo_f:
-                sudo_f.write("\n#Added by Sabayon Installer\n%wheel  ALL=ALL\n")
+                sudo_f.write("\n#Added by Rogentos Installer\n%wheel  ALL=ALL\n")
                 sudo_f.flush()
 
     def setup_audio(self):
@@ -759,7 +759,7 @@ class SabayonInstall:
             f.flush()
             f.close()
 
-        # See Sabayon bug #2582
+        # See Rogentos bug #2582
         system_font = self._anaconda.instLanguage.info.get("SYSFONT")
         if system_font is not None:
             consolefont_dir = self._root + "/usr/share/consolefonts"
@@ -826,12 +826,12 @@ class SabayonInstall:
                 "etc/entropy/packages/package.unmask")
             if os.access(mask_file, os.W_OK) and os.path.isfile(mask_file):
                 f = open(mask_file,"aw")
-                f.write("\n# added by Sabayon Installer\nx11-drivers/nvidia-drivers\n")
+                f.write("\n# added by Rogentos Installer\nx11-drivers/nvidia-drivers\n")
                 f.flush()
                 f.close()
             if os.access(unmask_file, os.W_OK) and os.path.isfile(unmask_file):
                 f = open(unmask_file,"aw")
-                f.write("\n# added by Sabayon Installer\n%s\n" % (
+                f.write("\n# added by Rogentos Installer\n%s\n" % (
                     legacy_unmask_map[nv_ver],))
                 f.flush()
                 f.close()
@@ -868,7 +868,7 @@ class SabayonInstall:
         return webserv
 
     def emit_install_done(self):
-        # user installed Sabayon, w00hooh!
+        # user installed Rogentos, w00hooh!
         try:
             webserv = self._get_entropy_webservice()
         except WebService.UnsupportedService:
@@ -883,7 +883,7 @@ class SabayonInstall:
         This function copy the LiveCD/DVD content into self._root
         """
 
-        if not os.getenv("SABAYON_DISABLE_PKG_REMOVAL"):
+        if not os.getenv("ROGENTOS_DISABLE_PKG_REMOVAL"):
             self._setup_packages_to_remove()
 
         action = _("System Installation")
@@ -1194,9 +1194,9 @@ class SabayonInstall:
         if not hasattr(self._entropy, 'reorder_mirrors'):
             # Entropy version does not support it
             return
-        # disable by default, pkg.sabayon.org was always selected
+        # disable by default, pkg.rogentos.org was always selected
         # as first, causing massive bandwidth usage
-        if not os.getenv('SABAYON_ENABLE_MIRROR_SORTING'):
+        if not os.getenv('ROGENTOS_ENABLE_MIRROR_SORTING'):
             return
 
         self._progress.set_label("%s: %s" % (
@@ -1224,7 +1224,7 @@ class SabayonInstall:
             self._change_entropy_chroot(chroot)
 
         silent = True
-        if os.getenv('SABAYON_DEBUG'):
+        if os.getenv('ROGENTOS_DEBUG'):
             silent = False
         # XXX add stdout silence
         oldstdout = sys.stdout
@@ -1360,7 +1360,7 @@ class SabayonInstall:
         langpacks = new_langpacks
 
         # filter out unwanted packages
-        # see sabayon.const
+        # see rogentos.const
 
         client_repo = self._entropy.installed_repository()
 
