@@ -883,7 +883,7 @@ class SabayonInstall:
         This function copy the LiveCD/DVD content into self._root
         """
 
-        if not os.getenv("ROGENTOS_DISABLE_PKG_REMOVAL"):
+        if not os.getenv("SABAYON_DISABLE_PKG_REMOVAL"):
             self._setup_packages_to_remove()
 
         action = _("System Installation")
