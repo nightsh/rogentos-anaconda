@@ -447,7 +447,7 @@ class SabayonInstall:
             rm -f /etc/init.d/installer-text
             rc-update del music boot default
             rm -f /etc/init.d/music
-            rc-update del sabayonlive boot default
+            rc-update del rogentoslive boot default
             rm -f /etc/init.d/rogentoslive
             rc-update add vixie-cron default
             if [ ! -e "/etc/init.d/net.eth0" ]; then
