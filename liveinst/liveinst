@@ -35,10 +35,10 @@ done
 [[ -z "${DISPLAY}" ]] && DO_TEXT="1"
 
 export ANACONDA_PRODUCTNAME="Rogentos"
-export ANACONDA_PRODUCTVERSION="$(cat /etc/sabayon-release | cut -d' ' -f 4)"
+export ANACONDA_PRODUCTVERSION="$(cat /etc/rogentos-release | cut -d' ' -f 4)"
 export ANACONDA_PRODUCTPATH="/mnt/livecd"
 export ANACONDA_CHROOTPATH="/mnt/sysimage"
-export ANACONDA_PRODUCTARCH="$(cat /etc/sabayon-release | cut -d' ' -f 3)"
+export ANACONDA_PRODUCTARCH="$(cat /etc/rogentos-release | cut -d' ' -f 3)"
 export ANACONDA_BUGURL=""
 export PIXMAPPATH="/usr/share/anaconda/pixmaps"
 
