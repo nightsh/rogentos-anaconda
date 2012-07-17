@@ -230,5 +230,5 @@ ASIAN_FONTS_PACKAGES = ["@ime-fonts-support", "@ime-fonts"]
 FIREWALL_PACKAGE = "net-firewall/ufw"
 FIREWALL_SERVICE = "ufw"
 
-LIVE_USER = "sabayonuser"
+LIVE_USER = "rogentosuser"
 REPO_NAME = "sabayonlinux.org"
