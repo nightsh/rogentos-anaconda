@@ -383,14 +383,14 @@ class SabayonInstall:
         return 0
 
     def _configure_skel(self):
-
-        # copy Sulfur on the desktop
-        sulfur_desktop = self._root+"/usr/share/applications/sulfur.desktop"
-        if os.path.isfile(sulfur_desktop):
-            sulfur_user_desktop = self._root+"/etc/skel/Desktop/sulfur.desktop"
-            shutil.copy2(sulfur_desktop, sulfur_user_desktop)
+        
+        # copy Rigo on the desktop
+        rigo_desktop = self._root+"/usr/share/applications/rigo.desktop"
+        if os.path.isfile(rigo_desktop):
+            rigo_user_desktop = self._root+"/etc/skel/Desktop/rigo.desktop"
+            shutil.copy2(rigo_desktop, rigo_user_desktop)
             try:
-                os.chmod(sulfur_user_desktop, 0775)
+                os.chmod(rigo_user_desktop, 0775)
             except OSError:
                 pass
 
@@ -554,7 +554,6 @@ class SabayonInstall:
         tmp_dir = tempfile.mkdtemp()
         self.spawn("mount --move %s/dev %s" % (self._root, tmp_dir,))
         self.spawn("cp /dev/* %s/dev/ -Rp" % (self._root,))
-        self.spawn("cp /dev/.u* %s/dev/ -Rp" % (self._root,))
         self.spawn("mount --move %s %s/dev" % (tmp_dir, self._root,))
         shutil.rmtree(tmp_dir, True)
 
