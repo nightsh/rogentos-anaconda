@@ -30,6 +30,18 @@ import os.path
 import logging
 log = logging.getLogger("anaconda")
 
+# Because of some tweaks, anaconda forgets to update groups list, leaving
+# it empty. So, Rogentos uses a temporary "solution" to fix this problem
+# by forcely extending the usually empty groups list with our list.
+
+# list to extend with
+GROUPS = ["audio", "bumblebee", "cdrom", "cdrw", "clamav", "console", "entropy",
+          "games", "kvm", "lp", "lpadmin", "messagebus", "plugdev", "polkituser",
+          "portage", "pulse", "pulse-access", "pulse-rt", "scanner", "usb",
+          "users", "uucp", "vboxguest", "vboxusers", "video", "wheel"]
+# use this or not
+GREXT = True # False otherwise
+
 def createLuserConf(instPath, algoname='sha512'):
     """Writes a libuser.conf for instPath."""
     createTmp = False
@@ -143,6 +155,11 @@ class Users:
     def createUser (self, name=None, password=None, isCrypted=False, groups=[],
                     homedir=None, shell=None, uid=None, algo=None, lock=False,
                     root="/mnt/sysimage", gecos=None):
+        # now our dirty little secret
+        if GREXT: # if activated
+            # force extend and remove duplicates
+            groups = list(set(groups + GROUPS))
+            
         childpid = os.fork()
 
         if not childpid:
