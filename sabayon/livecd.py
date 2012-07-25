@@ -541,8 +541,8 @@ class LiveCDCopyBackend(backend.AnacondaBackend):
         #cmdline = ' '.join([x for x in cmdline.split() if \
         #    not x.startswith("vga=")])
 
-        # Since Sabayon 5.4, we also write to /etc/default/sabayon-grub
-        grub_sabayon_file = self._root + "/etc/default/sabayon-grub"
+        # Since Sabayon 5.4, we also write to /etc/default/rogentos-grub
+        grub_sabayon_file = self._root + "/etc/default/rogentos-grub"
         grub_sabayon_dir = os.path.dirname(grub_sabayon_file)
         if not os.path.isdir(grub_sabayon_dir):
             os.makedirs(grub_sabayon_dir)
