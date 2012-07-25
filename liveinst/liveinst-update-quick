@@ -1,7 +1,7 @@
 #!/bin/sh
 
 _fetch_ver="5"
-[[ -f "/etc/sabayon-edition" ]] && _fetch_ver=$(cat /etc/sabayon-edition | cut -d" " -f 3)
+[[ -f "/etc/rogentos-edition" ]] && _fetch_ver=$(cat /etc/rogentos-edition | cut -d" " -f 3)
 
 FETCH_VER=${FETCH_VER:-${_fetch_ver}}
 FETCH_FN="pyanaconda-${FETCH_VER}.tar.bz2"
