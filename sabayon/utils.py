@@ -391,7 +391,7 @@ class SabayonInstall:
             shutil.copy2(rigo_desktop, rigo_user_desktop)
             try:
                 os.chmod(rigo_user_desktop, 0775)
-            except OSError:
+            #except OSError:
                 pass
 
         gparted_desktop = self._root+"/etc/skel/Desktop/gparted.desktop"
