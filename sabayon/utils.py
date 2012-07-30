@@ -385,9 +385,9 @@ class SabayonInstall:
     def _configure_skel(self):
         
         # copy Rigo on the desktop
-        rigo_desktop = self._root+"/etc/skel/Desktop/rigo.desktop"
+        rigo_desktop = self._root+"/usr/share/applications/rigo.desktop"
         if os.path.isfile(rigo_desktop):
-            rigo_user_desktop = self._root+"/usr/share/applications/rigo.desktop"
+            rigo_user_desktop = self._root+"/etc/skel/Desktop/rigo.desktop"
             shutil.copy2(rigo_desktop, rigo_user_desktop)
             try:
                 os.chmod(rigo_user_desktop, 0775)
