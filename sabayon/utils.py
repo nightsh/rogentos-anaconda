@@ -669,7 +669,7 @@ class SabayonInstall:
         if os.path.isfile(sudoers_file):
             self.spawn("sed -i '/NOPASSWD/ s/^/#/' %s" % (sudoers_file,))
             with open(sudoers_file, "a") as sudo_f:
-                sudo_f.write("\n# Added by Rogentos Installer\n%wheel ALL=ALL\n")
+                sudo_f.write("\n#Added by Rogentos Installer\n%wheel ALL=ALL\n")
                 sudo_f.flush()
 
     def setup_audio(self):
