@@ -384,14 +384,14 @@ class SabayonInstall:
 
     def _configure_skel(self):
         
-        # copy Rigo on the desktop
-        rigo_desktop = self._root+"/usr/share/applications/rigo.desktop"
-        if os.path.isfile(rigo_desktop):
-            rigo_user_desktop = self._root+"/etc/skel/Desktop/rigo.desktop"
-            shutil.copy2(rigo_desktop, rigo_user_desktop)
+        # copy Sulfur on the desktop
+        sulfur_desktop = self._root+"/usr/share/applications/sulfur.desktop"
+        if os.path.isfile(sulfur_desktop):
+            sulfur_user_desktop = self._root+"/etc/skel/Desktop/sulfur.desktop"
+            shutil.copy2(sulfur_desktop, sulfur_user_desktop)
             try:
-                os.chmod(rigo_user_desktop, 0775)
-            #except OSError:
+                os.chmod(sulfur_user_desktop, 0775)
+            except OSError:
                 pass
 
         gparted_desktop = self._root+"/etc/skel/Desktop/gparted.desktop"
