@@ -383,7 +383,7 @@ class SabayonInstall:
         return 0
 
     def _configure_skel(self):
-        
+
         # copy Rigo on the desktop
         rigo_desktop = self._root+"/usr/share/applications/rigo.desktop"
         if os.path.isfile(rigo_desktop):
@@ -493,25 +493,6 @@ class SabayonInstall:
             self.spawn_chroot("rc-update del %s boot default" % (
                 FIREWALL_SERVICE,), silent = True)
 
-        # Copy the kernel modules blacklist configuration file
-        if os.access("/etc/modules.d/blacklist",os.F_OK):
-            self.spawn(
-                "cp -p /etc/modules.d/blacklist %s/etc/modules.d/blacklist" % (
-                    self._root,))
-
-        # XXX: hack
-        # Copy fglrx & GNOME Shell workaround to target system if found.
-        # This workaround will be dropped ASAP (it's shit and uses spawn()
-        # for no particular reason -- doesn't check exit status, etc...)
-        # Who cares, it will be killed very soon!
-        glib_schema = "/usr/share/glib-2.0/schemas/org.sabayon-fglrx.gschema.override"
-        if os.path.isfile(glib_schema):
-            self.spawn(
-                "cp -p %s %s%s" % (
-                    glib_schema, self._root, glib_schema,))
-            self.spawn_chroot("/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas",
-                silent = True)
-
         # XXX: hack
         # For GDM, set DefaultSession= to /etc/skel/.dmrc value
         # This forces GDM to respect the default session and load Cinnamon
@@ -549,6 +530,21 @@ class SabayonInstall:
             self.remove_package('nvidia-settings', silent = True)
             self.remove_package('nvidia-drivers', silent = True)
             self.remove_package('nvidia-userspace', silent = True)
+
+        # created by gpu-detector
+        if os.path.isfile("/tmp/.radeon.kms"):
+            # since CONFIG_DRM_RADEON_KMS=n on our kernel
+            # we need to force radeon to load at boot
+            modules_conf = self._root + "/etc/conf.d/modules"
+            with open(modules_conf, "a+") as mod_f:
+                mod_f.write("\n")
+                mod_f.write("""\
+# Added by the Sabayon Installer to force radeon.ko to load
+# since CONFIG_DRM_RADEON_KMS is not enabled by default at
+# this time.
+modules="radeon"
+module_radeon_args="modeset=1"
+""")
 
     def copy_udev(self):
         tmp_dir = tempfile.mkdtemp()

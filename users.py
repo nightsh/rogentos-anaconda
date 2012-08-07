@@ -35,12 +35,13 @@ log = logging.getLogger("anaconda")
 # by forcely extending the usually empty groups list with our list.
 
 # list to extend with
-#GROUPS = ["audio", "bumblebee", "cdrom", "cdrw", "clamav", "console", "entropy",
-#          "games", "kvm", "lp", "lpadmin", "messagebus", "plugdev", "polkituser",
-#          "portage", "pulse", "pulse-access", "pulse-rt", "scanner", "usb",
-#          "users", "uucp", "vboxguest", "vboxusers", "video", "wheel"]
+GROUPS = ["audio", "bumblebee", "cdrom", "cdrw", "clamav", "console", "entropy",
+          "games", "kvm", "lp", "lpadmin", "messagebus", "plugdev", "polkituser",
+          "portage", "pulse", "pulse-access", "pulse-rt", "scanner", "usb",
+          "users", "uucp", "vboxguest", "vboxusers", "video", "wheel"]
 # use this or not
-#GREXT = True # False otherwise
+GREXT = False # True -> force groups extend
+              # False -> do NOTHING
 
 def createLuserConf(instPath, algoname='sha512'):
     """Writes a libuser.conf for instPath."""
@@ -156,10 +157,10 @@ class Users:
                     homedir=None, shell=None, uid=None, algo=None, lock=False,
                     root="/mnt/sysimage", gecos=None):
         # now our dirty little secret
-       # if GREXT: # if activated
+        if GREXT: # if activated (but it isn't) so this below will never happen
             # force extend and remove duplicates
-            # groups = list(set(groups + GROUPS))
-            
+            groups = list(set(groups + GROUPS))
+
         childpid = os.fork()
 
         if not childpid:
