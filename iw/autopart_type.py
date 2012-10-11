@@ -284,14 +284,17 @@ class PartitionTypeWindow(InstallWindow):
        
         if self.buttonGroup.getCurrent() == "custom":
         """
-        self.buttonGroup.setCurrent("custom")
+        
         # make sure reviewButton is active and not sensitive
-            if self.prevrev == None:
-                self.prevrev = self.reviewButton.get_active()
+        
+        self.buttonGroup.setCurrent("custom")
+        self.reviewButton.set_active(True)
+        self.reviewButton.set_sensitive(False)
+        self.encryptButton.set_sensitive(False)
+        
+        if self.prevrev == None:
+            self.prevrev = self.reviewButton.get_active()
 
-            self.reviewButton.set_active(True)
-            self.reviewButton.set_sensitive(False)
-            self.encryptButton.set_sensitive(False)
-            self.getNext()
+        self.getNext()
 
         return vbox
