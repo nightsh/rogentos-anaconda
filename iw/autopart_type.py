@@ -274,7 +274,7 @@ class PartitionTypeWindow(InstallWindow):
         self.table.attach(widget, 0, 1, 1, 2)
 
         # if not set in ks, use UI default
-       """
+        """
         if self.storage.clearPartType is None or self.storage.clearPartType == CLEARPART_TYPE_LINUX:
             self.buttonGroup.setCurrent("replace")
         elif self.storage.clearPartType == CLEARPART_TYPE_NONE:
