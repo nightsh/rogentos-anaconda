@@ -212,11 +212,11 @@ def doAutoPartition(anaconda):
         doPartitioning(anaconda.storage,
                        exclusiveDisks=anaconda.storage.clearPartDisks)
 
-        if anaconda.storage.doAutoPart:
-            _scheduleLVs(anaconda, devs)
+        #if anaconda.storage.doAutoPart:
+        #    _scheduleLVs(anaconda, devs)
 
         # grow LVs
-        growLVM(anaconda.storage)
+        #growLVM(anaconda.storage)
     except PartitioningWarning as msg:
         if not anaconda.ksdata:
             anaconda.intf.messageWindow(_("Warnings During Automatic "
